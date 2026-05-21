@@ -7,7 +7,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 font-bold text-lg mb-3">
-              <span className="inline-flex items-center justify-center w-7 h-7 rounded bg-white text-black text-xs font-black">FP</span>
+              <img 
+                src="/images/flexplay-logo.png" 
+                alt="FlexPlay Jerseys"
+                className="h-7 w-auto"
+              />
               FlexPlay Jerseys
             </div>
             <p className="text-sm leading-relaxed mb-4" style={{ color: '#aaa' }}>
@@ -32,6 +36,7 @@ export default function Footer() {
               <li>⏰ 10 AM – 8 PM</li>
               <li>✉️ <a href="mailto:flexplayjersey@gmail.com" className="hover:text-white transition-colors">flexplayjersey@gmail.com</a></li>
               <li>📦 Pan India Delivery</li>
+              <li>📸 <a href="https://www.instagram.com/flexplay.jerseys/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
             </ul>
           </div>
           {/* Why us */}
