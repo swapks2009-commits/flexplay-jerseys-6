@@ -70,23 +70,23 @@ export default function WhatsAppModal({ jersey, initialSize, onClose }: Props) {
     const loc = useGps ? gpsAddr : manualAddr
     const total = jersey.discountedPrice * qty
     const msg = [
-      `🛒 *New Order – FlexPlay Jerseys*`,
+      `New Order – FlexPlay Jerseys`,
       ``,
-      `👕 *Product*`,
+      `• Product`,
       `${jersey.name}`,
       `Kit: ${jersey.kit} | Country: ${jersey.country} ${jersey.flag}`,
       `Player: ${jersey.player}`,
       `Size: ${size} | Qty: ${qty}`,
       `Price: ₹${jersey.discountedPrice} × ${qty} = ₹${total}`,
       ``,
-      `👤 *Customer*`,
+      `• Customer`,
       `Name: ${name}`,
       `Phone: ${phone}`,
       ``,
-      `📍 *Delivery Address*`,
+      `• Delivery Address`,
       loc,
       ``,
-      `_Ordered via FlexPlay Jerseys_`,
+      `Ordered via FlexPlay Jerseys`,
       ``,
       `Please confirm avialability of above product`,
     ].join('\n')
