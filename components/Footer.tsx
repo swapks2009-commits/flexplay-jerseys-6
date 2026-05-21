@@ -30,13 +30,19 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3 text-sm tracking-widest uppercase" style={{ color: '#888' }}>Contact</h4>
             <ul className="space-y-2 text-sm" style={{ color: '#aaa' }}>
-              <li>📱 <a href="tel:+919156165683" className="hover:text-white transition-colors">+91 91561 65683</a></li>
-              <li>📱 <a href="tel:+917058049668" className="hover:text-white transition-colors">+91 70580 49668</a></li>
+              <li>📱 <a href="tel:+919156165683" className="hover:text-white transition-colors">+91 91561 65683</a> / <a href="tel:+917058049668" className="hover:text-white transition-colors">+91 70580 49668</a></li>
 
               <li>⏰ 10 AM – 8 PM</li>
               <li>✉️ <a href="mailto:flexplayjersey@gmail.com" className="hover:text-white transition-colors">flexplayjersey@gmail.com</a></li>
+              <li><a href="https://www.instagram.com/flexplay.jerseys/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
+                <img 
+                  src="/images/instagram-logo.png" 
+                  alt="Instagram"
+                  className="h-4 w-4"
+                />
+                @flexplay.jerseys
+              </a></li>
               <li>📦 Pan India Delivery</li>
-              <li>📸 <a href="https://www.instagram.com/flexplay.jerseys/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
             </ul>
           </div>
           {/* Why us */}
