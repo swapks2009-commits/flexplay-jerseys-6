@@ -36,7 +36,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ARG",
     "originalPrice": 599,
-    "discountedPrice": 399,
+    "discountedPrice": 549,
     "sizes": [
       "S",
       "M",
@@ -75,7 +75,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "POR",
     "originalPrice": 699,
-    "discountedPrice": 419,
+    "discountedPrice": 549,
     "sizes": [
       "S",
       "M",
@@ -113,7 +113,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ARG",
     "originalPrice": 599,
-    "discountedPrice": 390,
+    "discountedPrice": 539,
     "sizes": [
       "S",
       "M",
@@ -151,7 +151,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -184,7 +184,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "POR",
     "originalPrice": 599,
-    "discountedPrice": 360,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -211,44 +211,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "germany-2026-home-kit-fivesleeve-v-knitted-polo-embroidery-premium",
-    "name": "Germany 2026 Home Kit Fivesleeve V Knitted Polo Embroidery Premium",
-    "shortName": "Germany 2026 Home",
-    "country": "Germany",
-    "flag": "🇩🇪",
-    "year": 2026,
-    "kit": "Home",
-    "player": "",
-    "type": "Premium",
-    "badge": "GER",
-    "originalPrice": 599,
-    "discountedPrice": 399,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-20T180719.447_c6f8cd5b-bfe0-41b8-9c29-a04be7181ffa.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-20T180722.028_78627df3-6e3a-49ad-b559-75addf3fe4b5.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-20T180725.278_7e34daa6-c0f5-42ff-8ef9-211580019770.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-20T180729.507_2b437903-2855-4d63-9547-5d5c99f62768.webp"
-    ],
-    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "Germany",
-      "Home",
-      "2026",
-      "Premium",
-      "Embroidery",
-      "Polo",
-      "Five Sleeve"
-    ]
-  },
-  {
     "id": "spain-2026-away-kit-pedri-embroidery-premium",
     "name": "Spain 2026 Away Kit Pedri Embroidery Premium",
     "shortName": "Spain 2026 Away – Pedri",
@@ -260,7 +222,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ESP",
     "originalPrice": 599,
-    "discountedPrice": 390,
+    "discountedPrice": 539,
     "sizes": [
       "S",
       "M",
@@ -287,6 +249,44 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "germany-2026-home-kit-fivesleeve-v-knitted-polo-embroidery-premium",
+    "name": "Germany 2026 Home Kit Fivesleeve V Knitted Polo Embroidery Premium",
+    "shortName": "Germany 2026 Home",
+    "country": "Germany",
+    "flag": "🇩🇪",
+    "year": 2026,
+    "kit": "Home",
+    "player": "",
+    "type": "Premium",
+    "badge": "GER",
+    "originalPrice": 599,
+    "discountedPrice": 549,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-20T180719.447_c6f8cd5b-bfe0-41b8-9c29-a04be7181ffa.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-20T180722.028_78627df3-6e3a-49ad-b559-75addf3fe4b5.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-20T180725.278_7e34daa6-c0f5-42ff-8ef9-211580019770.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-20T180729.507_2b437903-2855-4d63-9547-5d5c99f62768.webp"
+    ],
+    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Germany",
+      "Home",
+      "2026",
+      "Premium",
+      "Embroidery",
+      "Polo",
+      "Five Sleeve"
+    ]
+  },
+  {
     "id": "spain-2026-away-kit-pedri",
     "name": "Spain 2026 Away Kit Pedri",
     "shortName": "Spain 2026 Away – Pedri",
@@ -298,7 +298,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ESP",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -320,6 +320,43 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "brazil-2026-home-kit-neymer-embroidery-premium",
+    "name": "Brazil 2026 Home Kit Neymer Embroidery Premium",
+    "shortName": "Brazil 2026 Home – Neymer",
+    "country": "Brazil",
+    "flag": "🇧🇷",
+    "year": 2026,
+    "kit": "Home",
+    "player": "Neymer",
+    "type": "Premium",
+    "badge": "BRA",
+    "originalPrice": 599,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-01T210627.100.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-01T210631.034.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-01T210633.957.webp"
+    ],
+    "description": "2026 Brazil Home Kit featuring Neymer's name & number. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Brazil",
+      "Neymer",
+      "Home",
+      "2026",
+      "Premium",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "portugal-2026-away-kit-ronaldo",
     "name": "Portugal 2026 Away Kit Ronaldo",
     "shortName": "Portugal 2026 Away – Ronaldo",
@@ -331,7 +368,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "POR",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -364,7 +401,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "BRA",
     "originalPrice": 599,
-    "discountedPrice": 350,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -390,43 +427,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "brazil-2026-home-kit-neymer-embroidery-premium",
-    "name": "Brazil 2026 Home Kit Neymer Embroidery Premium",
-    "shortName": "Brazil 2026 Home – Neymer",
-    "country": "Brazil",
-    "flag": "🇧🇷",
-    "year": 2026,
-    "kit": "Home",
-    "player": "Neymer",
-    "type": "Premium",
-    "badge": "BRA",
-    "originalPrice": 599,
-    "discountedPrice": 360,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL",
-      "3XL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-01T210627.100.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-01T210631.034.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-01T210633.957.webp"
-    ],
-    "description": "2026 Brazil Home Kit featuring Neymer's name & number. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "Brazil",
-      "Neymer",
-      "Home",
-      "2026",
-      "Premium",
-      "Embroidery"
-    ]
-  },
-  {
     "id": "brazil-2026-home-kit-neymer-1",
     "name": "Brazil 2026 Home Kit Neymer",
     "shortName": "Brazil 2026 Home – Neymer",
@@ -438,7 +438,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "BRA",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -471,7 +471,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "POR",
     "originalPrice": 599,
-    "discountedPrice": 360,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -507,7 +507,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ESP",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -542,7 +542,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "FRA",
     "originalPrice": 599,
-    "discountedPrice": 300,
+    "discountedPrice": 449,
     "sizes": [
       "S",
       "M",
@@ -576,7 +576,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "BRA",
     "originalPrice": 599,
-    "discountedPrice": 350,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -614,7 +614,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "MEX",
     "originalPrice": 599,
-    "discountedPrice": 360,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -651,7 +651,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "BRA",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -684,7 +684,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "JPN",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -717,7 +717,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -750,7 +750,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "BRA",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -782,7 +782,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "BRA",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -806,6 +806,44 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "argentina-2026-home-kit-messi-embroidery-premium",
+    "name": "Argentina 2026 Home Kit Messi Embroidery Premium",
+    "shortName": "Argentina 2026 Home – Messi",
+    "country": "Argentina",
+    "flag": "🇦🇷",
+    "year": 2026,
+    "kit": "Home",
+    "player": "Messi",
+    "type": "Premium",
+    "badge": "ARG",
+    "originalPrice": 599,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-15T170831.301.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T170845.936.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T170848.937.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-15T170852.835.webp"
+    ],
+    "description": "2026 Argentina Home Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Argentina",
+      "Messi",
+      "Home",
+      "2026",
+      "Premium",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "germany-2026-black-concept-kit-musiala-fivesleeve-polo",
     "name": "Germany 2026 Black Concept Kit Musiala Fivesleeve Polo",
     "shortName": "Germany 2026 Third – Musiala",
@@ -817,7 +855,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "GER",
     "originalPrice": 599,
-    "discountedPrice": 350,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -851,7 +889,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ENG",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -873,6 +911,44 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "france-2026-home-kit-mbappe-polo-embroidery-premium-1",
+    "name": "France 2026 Home Kit Mbappe Polo Embroidery Premium",
+    "shortName": "France 2026 Home – Mbappe",
+    "country": "France",
+    "flag": "🇫🇷",
+    "year": 2026,
+    "kit": "Home",
+    "player": "Mbappe",
+    "type": "Premium",
+    "badge": "FRA",
+    "originalPrice": 599,
+    "discountedPrice": 529,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-22T202105.462.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-22T202111.326.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-22T202108.251.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-22T202115.646.webp"
+    ],
+    "description": "2026 France Home Kit featuring Mbappe's name & number. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "France",
+      "Mbappe",
+      "Home",
+      "2026",
+      "Premium",
+      "Embroidery",
+      "Polo"
+    ]
+  },
+  {
     "id": "spain-2026-home-kit-lamine-yamal-embroidery-premium",
     "name": "Spain 2026 Home Kit Lamine Yamal Embroidery Premium",
     "shortName": "Spain 2026 Home – Lamine Yamal",
@@ -884,7 +960,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ESP",
     "originalPrice": 599,
-    "discountedPrice": 360,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -922,7 +998,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -947,44 +1023,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "france-2026-home-kit-mbappe-polo-embroidery-premium-1",
-    "name": "France 2026 Home Kit Mbappe Polo Embroidery Premium",
-    "shortName": "France 2026 Home – Mbappe",
-    "country": "France",
-    "flag": "🇫🇷",
-    "year": 2026,
-    "kit": "Home",
-    "player": "Mbappe",
-    "type": "Premium",
-    "badge": "FRA",
-    "originalPrice": 599,
-    "discountedPrice": 380,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-22T202105.462.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-22T202111.326.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-22T202108.251.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-22T202115.646.webp"
-    ],
-    "description": "2026 France Home Kit featuring Mbappe's name & number. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "France",
-      "Mbappe",
-      "Home",
-      "2026",
-      "Premium",
-      "Embroidery",
-      "Polo"
-    ]
-  },
-  {
     "id": "argentina-2026-tiro-polo-embroidery-premium",
     "name": "Argentina 2026 Tiro Polo Embroidery Premium",
     "shortName": "Argentina 2026 Home",
@@ -996,7 +1034,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ARG",
     "originalPrice": 599,
-    "discountedPrice": 370,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
@@ -1021,6 +1059,39 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "france-2026-away-kit-dembele",
+    "name": "France 2026 Away Kit Mbappe",
+    "shortName": "France 2026 Away – Mbappe",
+    "country": "France",
+    "flag": "🇫🇷",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Mbappe",
+    "type": "Standard",
+    "badge": "FRA",
+    "originalPrice": 499,
+    "discountedPrice": 439,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T200944.547.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T200947.185.webp"
+    ],
+    "description": "2026 France Away Kit featuring Mbappe's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "France",
+      "Mbappe",
+      "Away",
+      "2026"
+    ]
+  },
+  {
     "id": "brazil-2026-away-kit-neymer-embroidery-1",
     "name": "Brazil 2026 Away Kit Neymer Embroidery",
     "shortName": "Brazil 2026 Away – Neymer",
@@ -1032,7 +1103,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "BRA",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -1056,39 +1127,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "france-2026-away-kit-dembele",
-    "name": "France 2026 Away Kit Mbappe",
-    "shortName": "France 2026 Away – Mbappe",
-    "country": "France",
-    "flag": "🇫🇷",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Mbappe",
-    "type": "Standard",
-    "badge": "FRA",
-    "originalPrice": 499,
-    "discountedPrice": 290,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T200944.547.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T200947.185.webp"
-    ],
-    "description": "2026 France Away Kit featuring Mbappe's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "France",
-      "Mbappe",
-      "Away",
-      "2026"
-    ]
-  },
-  {
     "id": "uruguay-2026-home-kit-valverde",
     "name": "Uruguay 2026 Home Kit Valverde",
     "shortName": "Uruguay 2026 Home – Valverde",
@@ -1100,7 +1138,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "URU",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -1133,7 +1171,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "FRA",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1155,110 +1193,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "argentina-2026-home-kit-messi-embroidery-premium",
-    "name": "Argentina 2026 Home Kit Messi Embroidery Premium",
-    "shortName": "Argentina 2026 Home – Messi",
-    "country": "Argentina",
-    "flag": "🇦🇷",
-    "year": 2026,
-    "kit": "Home",
-    "player": "Messi",
-    "type": "Premium",
-    "badge": "ARG",
-    "originalPrice": 599,
-    "discountedPrice": 370,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL",
-      "XXXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-15T170831.301.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T170845.936.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T170848.937.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-15T170852.835.webp"
-    ],
-    "description": "2026 Argentina Home Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "Argentina",
-      "Messi",
-      "Home",
-      "2026",
-      "Premium",
-      "Embroidery"
-    ]
-  },
-  {
-    "id": "netherlands-2026-away-kit-de-jong",
-    "name": "Netherlands 2026 Away Kit De Jong",
-    "shortName": "Netherlands 2026 Away – De Jong",
-    "country": "Netherlands",
-    "flag": "🇳🇱",
-    "year": 2026,
-    "kit": "Away",
-    "player": "De Jong",
-    "type": "Standard",
-    "badge": "NED",
-    "originalPrice": 499,
-    "discountedPrice": 290,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T201109.305.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T201111.738.webp"
-    ],
-    "description": "2026 Netherlands Away Kit featuring De Jong's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Netherlands",
-      "De Jong",
-      "Away",
-      "2026"
-    ]
-  },
-  {
-    "id": "norway-2026-away-kit-haaland",
-    "name": "Norway 2026 Away Kit Haaland",
-    "shortName": "Norway 2026 Away – Haaland",
-    "country": "Norway",
-    "flag": "🇳🇴",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Haaland",
-    "type": "Standard",
-    "badge": "NOR",
-    "originalPrice": 499,
-    "discountedPrice": 290,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-29T203250.995.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-29T203254.448.webp"
-    ],
-    "description": "2026 Norway Away Kit featuring Haaland's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Norway",
-      "Haaland",
-      "Away",
-      "2026"
-    ]
-  },
-  {
     "id": "spain-2026-home-kit-lamine-yamal",
     "name": "Spain 2026 Home Kit Lamine Yamal",
     "shortName": "Spain 2026 Home – Lamine Yamal",
@@ -1270,7 +1204,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ESP",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1292,6 +1226,108 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "norway-2026-away-kit-haaland",
+    "name": "Norway 2026 Away Kit Haaland",
+    "shortName": "Norway 2026 Away – Haaland",
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Haaland",
+    "type": "Standard",
+    "badge": "NOR",
+    "originalPrice": 499,
+    "discountedPrice": 439,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-29T203250.995.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-29T203254.448.webp"
+    ],
+    "description": "2026 Norway Away Kit featuring Haaland's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Norway",
+      "Haaland",
+      "Away",
+      "2026"
+    ]
+  },
+  {
+    "id": "netherlands-2026-away-kit-de-jong",
+    "name": "Netherlands 2026 Away Kit De Jong",
+    "shortName": "Netherlands 2026 Away – De Jong",
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "year": 2026,
+    "kit": "Away",
+    "player": "De Jong",
+    "type": "Standard",
+    "badge": "NED",
+    "originalPrice": 499,
+    "discountedPrice": 439,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T201109.305.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T201111.738.webp"
+    ],
+    "description": "2026 Netherlands Away Kit featuring De Jong's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Netherlands",
+      "De Jong",
+      "Away",
+      "2026"
+    ]
+  },
+  {
+    "id": "japan-2026-away-kit-embroidery-premium",
+    "name": "Japan 2026 Away Kit Embroidery Premium",
+    "shortName": "Japan 2026 Away",
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "year": 2026,
+    "kit": "Away",
+    "player": "",
+    "type": "Premium",
+    "badge": "JPN",
+    "originalPrice": 599,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-15T165435.152.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T165438.608.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-15T165442.346.webp"
+    ],
+    "description": "2026 Japan Away Kit. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Japan",
+      "Away",
+      "2026",
+      "Premium",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "tshirt-portugal-red-polo-embroidery-premum",
     "name": "Tshirt Portugal Red Polo Embroidery Premum",
     "shortName": "Portugal 2026 Home",
@@ -1303,7 +1339,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "POR",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -1329,77 +1365,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "portugal-2026-home-kit-ronaldo-embroidery-with-shorts",
-    "name": "Portugal 2026 Home Kit Ronaldo Embroidery With Shorts",
-    "shortName": "Portugal 2026 Home – Ronaldo",
-    "country": "Portugal",
-    "flag": "🇵🇹",
-    "year": 2026,
-    "kit": "Home",
-    "player": "Ronaldo",
-    "type": "Standard",
-    "badge": "POR",
-    "originalPrice": 499,
-    "discountedPrice": 499,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-02T182738.750.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-02T182741.995.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-02T182745.267.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-02-02T182937.305.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-02T182940.253.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-02T182943.534.webp"
-    ],
-    "description": "2026 Portugal Home Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Portugal",
-      "Ronaldo",
-      "Home",
-      "2026",
-      "Embroidery"
-    ]
-  },
-  {
-    "id": "brazil-2026-away-kit-raphina",
-    "name": "Brazil 2026 Away Kit Raphina",
-    "shortName": "Brazil 2026 Away – Raphina",
-    "country": "Brazil",
-    "flag": "🇧🇷",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Raphina",
-    "type": "Standard",
-    "badge": "BRA",
-    "originalPrice": 499,
-    "discountedPrice": 290,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T220808.406.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T220812.037.webp"
-    ],
-    "description": "2026 Brazil Away Kit featuring Raphina's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Brazil",
-      "Raphina",
-      "Away",
-      "2026"
-    ]
-  },
-  {
     "id": "tshirt-argentina-black-polo-embroidery-premum",
     "name": "Tshirt Argentina Black Polo Embroidery Premium",
     "shortName": "Argentina 2026 Home",
@@ -1411,7 +1376,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ARG",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -1438,6 +1403,77 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "brazil-2026-away-kit-raphina",
+    "name": "Brazil 2026 Away Kit Raphina",
+    "shortName": "Brazil 2026 Away – Raphina",
+    "country": "Brazil",
+    "flag": "🇧🇷",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Raphina",
+    "type": "Standard",
+    "badge": "BRA",
+    "originalPrice": 499,
+    "discountedPrice": 439,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T220808.406.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T220812.037.webp"
+    ],
+    "description": "2026 Brazil Away Kit featuring Raphina's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Brazil",
+      "Raphina",
+      "Away",
+      "2026"
+    ]
+  },
+  {
+    "id": "portugal-2026-home-kit-ronaldo-embroidery-with-shorts",
+    "name": "Portugal 2026 Home Kit Ronaldo Embroidery With Shorts",
+    "shortName": "Portugal 2026 Home – Ronaldo",
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "year": 2026,
+    "kit": "Home",
+    "player": "Ronaldo",
+    "type": "Standard",
+    "badge": "POR",
+    "originalPrice": 499,
+    "discountedPrice": 649,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-02T182738.750.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-02T182741.995.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-02T182745.267.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-02-02T182937.305.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-02T182940.253.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-02T182943.534.webp"
+    ],
+    "description": "2026 Portugal Home Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Portugal",
+      "Ronaldo",
+      "Home",
+      "2026",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "england-2026-home-kit-belingham-embroidery",
     "name": "England 2026 Home Kit Belingham Embroidery",
     "shortName": "England 2026 Home – Belingham",
@@ -1449,7 +1485,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ENG",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -1473,39 +1509,39 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "japan-2026-away-kit-embroidery-premium",
-    "name": "Japan 2026 Away Kit Embroidery Premium",
-    "shortName": "Japan 2026 Away",
-    "country": "Japan",
-    "flag": "🇯🇵",
+    "id": "portugal-2026-away-kit-ronaldo-fullsleeve-embroidery",
+    "name": "Portugal 2026 Away Kit Ronaldo Fullsleeve Embroidery",
+    "shortName": "Portugal 2026 Away – Ronaldo",
+    "country": "Portugal",
+    "flag": "🇵🇹",
     "year": 2026,
     "kit": "Away",
-    "player": "",
-    "type": "Premium",
-    "badge": "JPN",
+    "player": "Ronaldo",
+    "type": "Standard",
+    "badge": "POR",
     "originalPrice": 599,
-    "discountedPrice": 360,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
       "L",
       "XL",
-      "XXL",
-      "XXXXL"
+      "XXL"
     ],
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-15T165435.152.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T165438.608.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-15T165442.346.webp"
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T194947.402.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-19T194950.123.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T194954.100.webp"
     ],
-    "description": "2026 Japan Away Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Portugal Away Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
-      "Japan",
+      "Portugal",
+      "Ronaldo",
       "Away",
       "2026",
-      "Premium",
-      "Embroidery"
+      "Embroidery",
+      "Full Sleeve"
     ]
   },
   {
@@ -1520,7 +1556,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "GER",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -1558,7 +1594,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -1591,7 +1627,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "CRO",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1624,7 +1660,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "ITA",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -1651,6 +1687,38 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "rcb-2026-maroon-striper-polo",
+    "name": "Rcb 2026 Maroon Striper Polo",
+    "shortName": "Rcb 2026 Home",
+    "country": "Rcb",
+    "flag": "🏏",
+    "year": 2026,
+    "kit": "Home",
+    "player": "",
+    "type": "Standard",
+    "badge": "RCB",
+    "originalPrice": 599,
+    "discountedPrice": 479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T194413.620.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T194416.573.webp"
+    ],
+    "description": "2026 Rcb Home Kit. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Rcb",
+      "Home",
+      "2026",
+      "Polo"
+    ]
+  },
+  {
     "id": "brazil-2026-away-gk-kit-a-becker",
     "name": "Brazil 2026 Away Gk Kit A.Becker",
     "shortName": "Brazil 2026 Away – A.Becker",
@@ -1662,7 +1730,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "BRA",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1696,7 +1764,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "POR",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -1734,7 +1802,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "NOR",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1767,7 +1835,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "NOR",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -1802,7 +1870,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ESP",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1835,7 +1903,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ENG",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -1870,7 +1938,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "NED",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -1892,6 +1960,74 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "france-2026-away-kit-dembele-1",
+    "name": "France 2026 Away Kit Dembele",
+    "shortName": "France 2026 Away – Dembele",
+    "country": "France",
+    "flag": "🇫🇷",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Dembele",
+    "type": "Standard",
+    "badge": "FRA",
+    "originalPrice": 499,
+    "discountedPrice": 439,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T194252.547_530d3590-b086-41b9-8cd3-13fa03929c1d.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T194255.130_244baaa7-2cec-4d84-b7e6-6b116dad983a.webp"
+    ],
+    "description": "2026 France Away Kit featuring Dembele's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "France",
+      "Dembele",
+      "Away",
+      "2026"
+    ]
+  },
+  {
+    "id": "brazil-2026-away-kit-raphina-embroidery",
+    "name": "Brazil 2026 Away Kit Raphina Embroidery",
+    "shortName": "Brazil 2026 Away – Raphina",
+    "country": "Brazil",
+    "flag": "🇧🇷",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Raphina",
+    "type": "Standard",
+    "badge": "BRA",
+    "originalPrice": 599,
+    "discountedPrice": 479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-13T193243.422.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-13T193246.129.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-13T193249.248.webp"
+    ],
+    "description": "2026 Brazil Away Kit featuring Raphina's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Brazil",
+      "Raphina",
+      "Away",
+      "2026",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "tshirt-brazil-black-polo-embroidery-premium",
     "name": "Tshirt Brazil Black Polo Embroidery Premium",
     "shortName": "Brazil 2026 Home",
@@ -1903,7 +2039,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "BRA",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -1930,107 +2066,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "france-2026-away-kit-dembele-1",
-    "name": "France 2026 Away Kit Dembele",
-    "shortName": "France 2026 Away – Dembele",
-    "country": "France",
-    "flag": "🇫🇷",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Dembele",
-    "type": "Standard",
-    "badge": "FRA",
-    "originalPrice": 499,
-    "discountedPrice": 290,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T194252.547_530d3590-b086-41b9-8cd3-13fa03929c1d.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T194255.130_244baaa7-2cec-4d84-b7e6-6b116dad983a.webp"
-    ],
-    "description": "2026 France Away Kit featuring Dembele's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "France",
-      "Dembele",
-      "Away",
-      "2026"
-    ]
-  },
-  {
-    "id": "portugal-2026-away-kit-ronaldo-fullsleeve-embroidery",
-    "name": "Portugal 2026 Away Kit Ronaldo Fullsleeve Embroidery",
-    "shortName": "Portugal 2026 Away – Ronaldo",
-    "country": "Portugal",
-    "flag": "🇵🇹",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Ronaldo",
-    "type": "Standard",
-    "badge": "POR",
-    "originalPrice": 599,
-    "discountedPrice": 350,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T194947.402.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-19T194950.123.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T194954.100.webp"
-    ],
-    "description": "2026 Portugal Away Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Portugal",
-      "Ronaldo",
-      "Away",
-      "2026",
-      "Embroidery",
-      "Full Sleeve"
-    ]
-  },
-  {
-    "id": "japan-2026-home-kit",
-    "name": "Japan 2026 Home Kit",
-    "shortName": "Japan 2026 Home",
-    "country": "Japan",
-    "flag": "🇯🇵",
-    "year": 2026,
-    "kit": "Home",
-    "player": "",
-    "type": "Standard",
-    "badge": "JPN",
-    "originalPrice": 499,
-    "discountedPrice": 270,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-16T163436.458_503fb0ef-5dad-4770-88de-651557efaa53.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-16T163439.970_28729079-6147-467d-a830-e8cf8248eb07.webp"
-    ],
-    "description": "2026 Japan Home Kit. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Japan",
-      "Home",
-      "2026"
-    ]
-  },
-  {
     "id": "england-2026-away-kit-bellingham-embroidery",
     "name": "England 2026 Away Kit Bellingham Embroidery",
     "shortName": "England 2026 Away – Bellingham",
@@ -2042,7 +2077,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ENG",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -2066,18 +2101,18 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "japan-2026-away-kit",
-    "name": "Japan 2026 Away Kit",
-    "shortName": "Japan 2026 Away",
+    "id": "japan-2026-home-kit",
+    "name": "Japan 2026 Home Kit",
+    "shortName": "Japan 2026 Home",
     "country": "Japan",
     "flag": "🇯🇵",
     "year": 2026,
-    "kit": "Away",
+    "kit": "Home",
     "player": "",
     "type": "Standard",
     "badge": "JPN",
     "originalPrice": 499,
-    "discountedPrice": 299,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -2087,50 +2122,14 @@ export const JERSEYS: Jersey[] = [
     ],
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T175307.165.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-05T175310.111.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T175313.472.webp"
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-16T163436.458_503fb0ef-5dad-4770-88de-651557efaa53.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-16T163439.970_28729079-6147-467d-a830-e8cf8248eb07.webp"
     ],
-    "description": "2026 Japan Away Kit. Standard quality replica available from Thayyil Sports.",
+    "description": "2026 Japan Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
       "Japan",
-      "Away",
+      "Home",
       "2026"
-    ]
-  },
-  {
-    "id": "brazil-2026-away-kit-raphina-embroidery",
-    "name": "Brazil 2026 Away Kit Raphina Embroidery",
-    "shortName": "Brazil 2026 Away – Raphina",
-    "country": "Brazil",
-    "flag": "🇧🇷",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Raphina",
-    "type": "Standard",
-    "badge": "BRA",
-    "originalPrice": 599,
-    "discountedPrice": 330,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-13T193243.422.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-13T193246.129.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-13T193249.248.webp"
-    ],
-    "description": "2026 Brazil Away Kit featuring Raphina's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Brazil",
-      "Raphina",
-      "Away",
-      "2026",
-      "Embroidery"
     ]
   },
   {
@@ -2145,7 +2144,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ENG",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -2167,6 +2166,76 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "japan-2026-away-kit",
+    "name": "Japan 2026 Away Kit",
+    "shortName": "Japan 2026 Away",
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "year": 2026,
+    "kit": "Away",
+    "player": "",
+    "type": "Standard",
+    "badge": "JPN",
+    "originalPrice": 499,
+    "discountedPrice": 449,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T175307.165.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-05T175310.111.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T175313.472.webp"
+    ],
+    "description": "2026 Japan Away Kit. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Japan",
+      "Away",
+      "2026"
+    ]
+  },
+  {
+    "id": "argentina-2026-away-kit-messi-fullsleeve-embroidery-premium",
+    "name": "Argentina 2026 Away Kit Messi Fullsleeve Embroidery Premium",
+    "shortName": "Argentina 2026 Away – Messi",
+    "country": "Argentina",
+    "flag": "🇦🇷",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Messi",
+    "type": "Premium",
+    "badge": "ARG",
+    "originalPrice": 699,
+    "discountedPrice": 549,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202525.383.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T202529.277.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T202531.980.webp"
+    ],
+    "description": "2026 Argentina Away Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Argentina",
+      "Messi",
+      "Away",
+      "2026",
+      "Premium",
+      "Embroidery",
+      "Full Sleeve"
+    ]
+  },
+  {
     "id": "portugal-2026-home-kit-ronaldo-1",
     "name": "Portugal 2026 Home Kit Ronaldo",
     "shortName": "Portugal 2026 Home – Ronaldo",
@@ -2178,7 +2247,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "POR",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -2211,7 +2280,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "FRA",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -2234,39 +2303,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "argentina-2026-away-kit-alvarez",
-    "name": "Argentina 2026 Away Kit Alvarez",
-    "shortName": "Argentina 2026 Away – Alvarez",
-    "country": "Argentina",
-    "flag": "🇦🇷",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Alvarez",
-    "type": "Standard",
-    "badge": "ARG",
-    "originalPrice": 499,
-    "discountedPrice": 290,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T173649.416.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T173652.802.webp"
-    ],
-    "description": "2026 Argentina Away Kit featuring Alvarez's name & number. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Argentina",
-      "Alvarez",
-      "Away",
-      "2026"
-    ]
-  },
-  {
     "id": "france-2026-home-kit-mbappe-fullsleeve-polo-embroidery",
     "name": "France 2026 Home Kit Mbappe Fullsleeve Polo Embroidery",
     "shortName": "France 2026 Home – Mbappe",
@@ -2278,7 +2314,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "FRA",
     "originalPrice": 699,
-    "discountedPrice": 400,
+    "discountedPrice": 549,
     "sizes": [
       "S",
       "M",
@@ -2315,7 +2351,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Premium",
     "badge": "FRA",
     "originalPrice": 599,
-    "discountedPrice": 449,
+    "discountedPrice": 599,
     "sizes": [
       "M",
       "L",
@@ -2353,7 +2389,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -2375,6 +2411,39 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "argentina-2026-away-kit-alvarez",
+    "name": "Argentina 2026 Away Kit Alvarez",
+    "shortName": "Argentina 2026 Away – Alvarez",
+    "country": "Argentina",
+    "flag": "🇦🇷",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Alvarez",
+    "type": "Standard",
+    "badge": "ARG",
+    "originalPrice": 499,
+    "discountedPrice": 439,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T173649.416.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T173652.802.webp"
+    ],
+    "description": "2026 Argentina Away Kit featuring Alvarez's name & number. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Argentina",
+      "Alvarez",
+      "Away",
+      "2026"
+    ]
+  },
+  {
     "id": "germany-2026-home-gk-kit-neuer",
     "name": "Germany 2026 Home Gk Kit Neuer",
     "shortName": "Germany 2026 Home – Neuer",
@@ -2386,7 +2455,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "GER",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -2409,6 +2478,44 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "spain-2026-home-kit-pedri-embroidery-premium-1",
+    "name": "Spain 2026 Home Kit Pedri Embroidery Premium",
+    "shortName": "Spain 2026 Home – Pedri",
+    "country": "Spain",
+    "flag": "🇪🇸",
+    "year": 2026,
+    "kit": "Home",
+    "player": "Pedri",
+    "type": "Premium",
+    "badge": "ESP",
+    "originalPrice": 599,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T210519.628.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T210716.035.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T210718.218.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T210721.031.webp"
+    ],
+    "description": "2026 Spain Home Kit featuring Pedri's name & number. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Spain",
+      "Pedri",
+      "Home",
+      "2026",
+      "Premium",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "argentina-2026-training-kit-messi",
     "name": "Argentina 2026 Training Kit Messi",
     "shortName": "Argentina 2026 Home – Messi",
@@ -2420,7 +2527,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "M",
       "S"
@@ -2440,6 +2547,42 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "germany-2026-home-kit-writz-knitted-polo-embroidery-premium-1",
+    "name": "Germany 2026 Home Kit Writz Knitted Polo Embroidery Premium",
+    "shortName": "Germany 2026 Home",
+    "country": "Germany",
+    "flag": "🇩🇪",
+    "year": 2026,
+    "kit": "Home",
+    "player": "",
+    "type": "Premium",
+    "badge": "GER",
+    "originalPrice": 599,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T203446.373.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T203449.228.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T203452.066.webp"
+    ],
+    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
+    "tags": [
+      "Germany",
+      "Home",
+      "2026",
+      "Premium",
+      "Embroidery",
+      "Polo"
+    ]
+  },
+  {
     "id": "england-2026-away-kit-saka",
     "name": "England 2026 Away Kit Saka",
     "shortName": "England 2026 Away – Saka",
@@ -2451,7 +2594,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ENG",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -2473,40 +2616,41 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "argentina-2026-away-kit-messi-fullsleeve-embroidery-premium",
-    "name": "Argentina 2026 Away Kit Messi Fullsleeve Embroidery Premium",
-    "shortName": "Argentina 2026 Away – Messi",
-    "country": "Argentina",
-    "flag": "🇦🇷",
+    "id": "germany-2026-away-kit-musiala-knitted-polo-embroidery-premium",
+    "name": "Germany 2026 Away Kit Musiala Knitted Polo Embroidery Premium",
+    "shortName": "Germany 2026 Away – Musiala",
+    "country": "Germany",
+    "flag": "🇩🇪",
     "year": 2026,
     "kit": "Away",
-    "player": "Messi",
+    "player": "Musiala",
     "type": "Premium",
-    "badge": "ARG",
-    "originalPrice": 699,
-    "discountedPrice": 419,
+    "badge": "GER",
+    "originalPrice": 599,
+    "discountedPrice": 499,
     "sizes": [
       "S",
       "M",
       "L",
       "XL",
-      "XXL"
+      "XXL",
+      "XXXL"
     ],
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202525.383.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T202529.277.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T202531.980.webp"
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T205528.167.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T205530.514.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T205534.306.webp"
     ],
-    "description": "2026 Argentina Away Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Germany Away Kit featuring Musiala's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
-      "Argentina",
-      "Messi",
+      "Germany",
+      "Musiala",
       "Away",
       "2026",
       "Premium",
       "Embroidery",
-      "Full Sleeve"
+      "Polo"
     ]
   },
   {
@@ -2521,7 +2665,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "MEX",
     "originalPrice": 499,
-    "discountedPrice": 299,
+    "discountedPrice": 449,
     "sizes": [
       "S",
       "M",
@@ -2554,7 +2698,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "GER",
     "originalPrice": 599,
-    "discountedPrice": 330,
+    "discountedPrice": 479,
     "sizes": [
       "S",
       "M",
@@ -2577,82 +2721,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "spain-2026-home-kit-pedri-embroidery-premium-1",
-    "name": "Spain 2026 Home Kit Pedri Embroidery Premium",
-    "shortName": "Spain 2026 Home – Pedri",
-    "country": "Spain",
-    "flag": "🇪🇸",
-    "year": 2026,
-    "kit": "Home",
-    "player": "Pedri",
-    "type": "Premium",
-    "badge": "ESP",
-    "originalPrice": 599,
-    "discountedPrice": 370,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL",
-      "XXXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T210519.628.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T210716.035.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T210718.218.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T210721.031.webp"
-    ],
-    "description": "2026 Spain Home Kit featuring Pedri's name & number. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "Spain",
-      "Pedri",
-      "Home",
-      "2026",
-      "Premium",
-      "Embroidery"
-    ]
-  },
-  {
-    "id": "germany-2026-away-kit-musiala-knitted-polo-embroidery-premium",
-    "name": "Germany 2026 Away Kit Musiala Knitted Polo Embroidery Premium",
-    "shortName": "Germany 2026 Away – Musiala",
-    "country": "Germany",
-    "flag": "🇩🇪",
-    "year": 2026,
-    "kit": "Away",
-    "player": "Musiala",
-    "type": "Premium",
-    "badge": "GER",
-    "originalPrice": 599,
-    "discountedPrice": 370,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL",
-      "XXXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T205528.167.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T205530.514.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T205534.306.webp"
-    ],
-    "description": "2026 Germany Away Kit featuring Musiala's name & number. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "Germany",
-      "Musiala",
-      "Away",
-      "2026",
-      "Premium",
-      "Embroidery",
-      "Polo"
-    ]
-  },
-  {
     "id": "germany-2026-home-kit-wirtz",
     "name": "Germany 2026 Home Kit Wirtz",
     "shortName": "Germany 2026 Home – Wirtz",
@@ -2664,7 +2732,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "GER",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -2686,6 +2754,40 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "acmilan-2006-third-kit-with-shorts-imported",
+    "name": "Acmilan 2006 Third Kit With Shorts Imported",
+    "shortName": "Unknown 2006 Third",
+    "country": "Acmilan",
+    "flag": "🏳",
+    "year": 2006,
+    "kit": "Third",
+    "player": "",
+    "type": "Standard",
+    "badge": "UNK",
+    "originalPrice": 749,
+    "discountedPrice": 899,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T184800.939.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-05-20T185234.738.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T184807.628.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T184804.237.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T184811.645.webp"
+    ],
+    "description": "2006 Unknown Third Kit. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Third",
+      "2006"
+    ]
+  },
+  {
     "id": "columbia-2026-away-kit-luis-diaz",
     "name": "Columbia 2026 Away Kit Luis Diaz",
     "shortName": "Columbia 2026 Away – Luis Diaz",
@@ -2697,7 +2799,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "COL",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -2719,42 +2821,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "germany-2026-home-kit-writz-knitted-polo-embroidery-premium-1",
-    "name": "Germany 2026 Home Kit Writz Knitted Polo Embroidery Premium",
-    "shortName": "Germany 2026 Home",
-    "country": "Germany",
-    "flag": "🇩🇪",
-    "year": 2026,
-    "kit": "Home",
-    "player": "",
-    "type": "Premium",
-    "badge": "GER",
-    "originalPrice": 599,
-    "discountedPrice": 370,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T203446.373.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T203449.228.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T203452.066.webp"
-    ],
-    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
-    "tags": [
-      "Germany",
-      "Home",
-      "2026",
-      "Premium",
-      "Embroidery",
-      "Polo"
-    ]
-  },
-  {
     "id": "germany-2026-away-kit-wirtz-1",
     "name": "Germany 2026 Away Kit Wirtz",
     "shortName": "Germany 2026 Away – Wirtz",
@@ -2766,7 +2832,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "GER",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
@@ -2799,7 +2865,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "CRO",
     "originalPrice": 499,
-    "discountedPrice": 290,
+    "discountedPrice": 439,
     "sizes": [
       "S",
       "M",
@@ -2821,73 +2887,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "acmilan-2006-third-kit-with-shorts-imported",
-    "name": "Acmilan 2006 Third Kit With Shorts Imported",
-    "shortName": "Unknown 2006 Third",
-    "country": "Acmilan",
-    "flag": "🏳",
-    "year": 2006,
-    "kit": "Third",
-    "player": "",
-    "type": "Standard",
-    "badge": "UNK",
-    "originalPrice": 749,
-    "discountedPrice": 749,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T184800.939.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-05-20T185234.738.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T184807.628.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T184804.237.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T184811.645.webp"
-    ],
-    "description": "2006 Unknown Third Kit. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Third",
-      "2006"
-    ]
-  },
-  {
-    "id": "portugal-2026-black-kit-with-shorts-imported",
-    "name": "Portugal 2026 Black Kit With Shorts Imported",
-    "shortName": "Portugal 2026 Third",
-    "country": "Portugal",
-    "flag": "🇵🇹",
-    "year": 2026,
-    "kit": "Third",
-    "player": "",
-    "type": "Standard",
-    "badge": "POR",
-    "originalPrice": 749,
-    "discountedPrice": 749,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202016.336.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202032.507.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T202018.514.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T202021.109.webp"
-    ],
-    "description": "2026 Portugal Third Kit. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Portugal",
-      "Third",
-      "2026"
-    ]
-  },
-  {
     "id": "portugal-2026-away-kit-with-shorts-imported-copy",
     "name": "Portugal 2026 Away Kit With Shorts Imported",
     "shortName": "Portugal 2026 Away",
@@ -2899,7 +2898,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "POR",
     "originalPrice": 749,
-    "discountedPrice": 749,
+    "discountedPrice": 899,
     "sizes": [
       "S",
       "M",
@@ -2922,6 +2921,71 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
+    "id": "barcelona-2008-09-home-kit-with-shorts-imported",
+    "name": "Barcelona 2008-09 Home Kit With Shorts Imported",
+    "shortName": "Unknown 2008 Home",
+    "country": "Barcelona",
+    "flag": "🏳",
+    "year": 2008,
+    "kit": "Home",
+    "player": "",
+    "type": "Standard",
+    "badge": "UNK",
+    "originalPrice": 749,
+    "discountedPrice": 899,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195021.405.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195238.966.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195023.741.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T195026.535.webp"
+    ],
+    "description": "2008 Unknown Home Kit. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Home",
+      "2008"
+    ]
+  },
+  {
+    "id": "portugal-2026-black-kit-with-shorts-imported",
+    "name": "Portugal 2026 Black Kit With Shorts Imported",
+    "shortName": "Portugal 2026 Third",
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "year": 2026,
+    "kit": "Third",
+    "player": "",
+    "type": "Standard",
+    "badge": "POR",
+    "originalPrice": 749,
+    "discountedPrice": 899,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202016.336.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202032.507.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T202018.514.webp",
+      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T202021.109.webp"
+    ],
+    "description": "2026 Portugal Third Kit. Standard quality replica available from Thayyil Sports.",
+    "tags": [
+      "Portugal",
+      "Third",
+      "2026"
+    ]
+  },
+  {
     "id": "real-madrid-2006-away-kit-with-shorts-imported",
     "name": "Real Madrid 2006 Away Kit With Shorts Imported",
     "shortName": "Unknown 2006 Away",
@@ -2933,7 +2997,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "UNK",
     "originalPrice": 749,
-    "discountedPrice": 749,
+    "discountedPrice": 899,
     "sizes": [
       "S",
       "M",
@@ -2966,7 +3030,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "FRA",
     "originalPrice": 749,
-    "discountedPrice": 749,
+    "discountedPrice": 899,
     "sizes": [
       "S",
       "M",
@@ -2989,38 +3053,6 @@ export const JERSEYS: Jersey[] = [
     ]
   },
   {
-    "id": "barcelona-2008-09-home-kit-with-shorts-imported",
-    "name": "Barcelona 2008-09 Home Kit With Shorts Imported",
-    "shortName": "Unknown 2008 Home",
-    "country": "Barcelona",
-    "flag": "🏳",
-    "year": 2008,
-    "kit": "Home",
-    "player": "",
-    "type": "Standard",
-    "badge": "UNK",
-    "originalPrice": 749,
-    "discountedPrice": 749,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "inStock": true,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195021.405.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195238.966.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195023.741.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T195026.535.webp"
-    ],
-    "description": "2008 Unknown Home Kit. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Home",
-      "2008"
-    ]
-  },
-  {
     "id": "argentina-2026-home-kit-with-shorts-imported",
     "name": "Argentina 2026 Home Kit With Shorts Imported",
     "shortName": "Argentina 2026 Home",
@@ -3032,7 +3064,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 749,
-    "discountedPrice": 749,
+    "discountedPrice": 899,
     "sizes": [
       "S",
       "M",
@@ -3066,7 +3098,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "UNK",
     "originalPrice": 749,
-    "discountedPrice": 749,
+    "discountedPrice": 899,
     "sizes": [
       "S",
       "M",
@@ -3098,7 +3130,7 @@ export const JERSEYS: Jersey[] = [
     "type": "Standard",
     "badge": "ARG",
     "originalPrice": 499,
-    "discountedPrice": 270,
+    "discountedPrice": 419,
     "sizes": [
       "S",
       "M",
