@@ -73,6 +73,8 @@ export default function JerseyModal({ jersey, onClose, onOrder }: Props) {
 
   function handleOrder() {
     if (!selectedSize) { setSizeError(true); return }
+    const isInStock = jersey.sizeStock?.[selectedSize] ?? true
+    if (!isInStock) { setSizeError(true); return }
     onOrder(jersey, selectedSize)
   }
 
@@ -227,18 +229,32 @@ export default function JerseyModal({ jersey, onClose, onOrder }: Props) {
                 {sizeError ? '⚠ Please select a size first' : 'size:'}
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                {(jersey.sizes ?? []).map(s => (
-                  <button key={s} onClick={() => { setSelectedSize(s); setSizeError(false) }}
-                    style={{
-                      padding: '6px 14px', borderRadius: 6, fontSize: 13, fontWeight: 500,
-                      cursor: 'pointer', transition: 'all 0.15s',
-                      background: selectedSize === s ? '#111' : 'white',
-                      color: selectedSize === s ? 'white' : '#111',
-                      border: selectedSize === s ? '1px solid #111' : '1px solid #ccc',
-                    }}>
-                    {s}
-                  </button>
-                ))}
+                {(jersey.sizes ?? []).map(s => {
+                  const isInStock = jersey.sizeStock?.[s] ?? true
+                  return (
+                    <button key={s} 
+                      onClick={() => { 
+                        if (isInStock) {
+                          setSelectedSize(s); 
+                          setSizeError(false)
+                        }
+                      }}
+                      disabled={!isInStock}
+                      title={!isInStock ? 'Out of stock' : ''}
+                      style={{
+                        padding: '6px 14px', borderRadius: 6, fontSize: 13, fontWeight: 500,
+                        cursor: isInStock ? 'pointer' : 'not-allowed', 
+                        transition: 'all 0.15s',
+                        background: selectedSize === s && isInStock ? '#111' : isInStock ? 'white' : '#f0f0f0',
+                        color: selectedSize === s && isInStock ? 'white' : isInStock ? '#111' : '#999',
+                        border: selectedSize === s && isInStock ? '1px solid #111' : isInStock ? '1px solid #ccc' : '1px solid #d0d0d0',
+                        textDecoration: !isInStock ? 'line-through' : 'none',
+                        opacity: 1,
+                      }}>
+                      {s}
+                    </button>
+                  )
+                })}
               </div>
             </div>
 

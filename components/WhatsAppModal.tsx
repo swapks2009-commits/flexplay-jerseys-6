@@ -58,6 +58,8 @@ export default function WhatsAppModal({ jersey, initialSize, onClose }: Props) {
     if (!name.trim()) e.name = 'Required'
     if (!phone.trim() || phone.replace(/\D/g, '').length < 10) e.phone = 'Enter a valid 10-digit number'
     if (!size) e.size = 'Please select a size'
+    const isInStock = jersey.sizeStock?.[size] ?? true
+    if (!isInStock) e.size = 'This size is out of stock'
     const loc = useGps ? gpsAddr : manualAddr
     if (!loc.trim()) e.location = 'Please enter or detect your delivery location'
     setErrors(e)
@@ -135,13 +137,30 @@ export default function WhatsAppModal({ jersey, initialSize, onClose }: Props) {
               Size {errors.size && <span className="font-normal text-xs">— {errors.size}</span>}
             </label>
             <div className="flex flex-wrap gap-2">
-              {jersey.sizes.map(s => (
-                <button key={s} onClick={() => { setSize(s); setErrors(p => ({ ...p, size: '' })) }}
-                  className={`px-3 py-1.5 rounded text-sm font-medium border transition-all ${size === s ? 'size-btn-active' : ''}`}
-                  style={size !== s ? { borderColor: 'var(--border-dark)', color: 'var(--text)', background: 'white' } : {}}>
-                  {s}
-                </button>
-              ))}
+              {jersey.sizes.map(s => {
+                const isInStock = jersey.sizeStock?.[s] ?? true
+                return (
+                  <button key={s} 
+                    onClick={() => { 
+                      if (isInStock) {
+                        setSize(s); 
+                        setErrors(p => ({ ...p, size: '' }))
+                      }
+                    }}
+                    disabled={!isInStock}
+                    title={!isInStock ? 'Out of stock' : ''}
+                    className={`px-3 py-1.5 rounded text-sm font-medium border transition-all ${size === s && isInStock ? 'size-btn-active' : ''}`}
+                    style={{
+                      borderColor: size === s && isInStock ? 'var(--border-dark)' : isInStock ? 'var(--border-dark)' : '#d0d0d0',
+                      color: size === s && isInStock ? 'white' : isInStock ? 'var(--text)' : '#999',
+                      background: size === s && isInStock ? '#111' : isInStock ? 'white' : '#f0f0f0',
+                      cursor: isInStock ? 'pointer' : 'not-allowed',
+                      textDecoration: !isInStock ? 'line-through' : 'none',
+                    }}>
+                    {s}
+                  </button>
+                )
+              })}
             </div>
           </div>
 

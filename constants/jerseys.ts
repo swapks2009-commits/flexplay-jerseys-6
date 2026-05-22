@@ -12,6 +12,7 @@ export type Jersey = {
   originalPrice: number;
   discountedPrice: number;
   sizes: string[];
+  sizeStock?: Record<string, boolean>;
   inStock: boolean;
   // Put your own image URLs here — Cloudinary, Google Drive direct link, or your hosting
   // For now using placeholder service with jersey colors so cards look great
@@ -45,13 +46,24 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": true,
+      "XXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-02-23T182259.777.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-23T182302.605.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-23T182305.427.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-01T114006.791_1854bdba-aedb-43ef-8e56-13e19b0d65f9.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B_-_2026-02-23T182308.911.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F_-_2026-02-23T182259.777.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F_-_2026-02-23T182259.777.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C_-_2026-02-23T182302.605.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C_-_2026-02-23T182305.427.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2025-12-01T114006.791_1854bdba-aedb-43ef-8e56-13e19b0d65f9.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B_-_2026-02-23T182308.911.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -74,7 +86,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Ronaldo",
     "type": "Premium",
     "badge": "POR",
-    "originalPrice": 699,
+    "originalPrice": 599,
     "discountedPrice": 549,
     "sizes": [
       "S",
@@ -83,11 +95,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-30T201416.709_8fac869b-e096-4553-9740-b1776e381ea7.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-30T201419.563_e9e27ea8-5a07-4f88-a106-636c532006d5.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-30T201422.543_c2283c23-1017-4b72-a636-a08c6949d4eb.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2025-12-30T201416.709_8fac869b-e096-4553-9740-b1776e381ea7.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2025-12-30T201416.709_8fac869b-e096-4553-9740-b1776e381ea7.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2025-12-30T201419.563_e9e27ea8-5a07-4f88-a106-636c532006d5.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2025-12-30T201422.543_c2283c23-1017-4b72-a636-a08c6949d4eb.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Third Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -122,12 +144,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": true,
+      "XXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-23T195610.082.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-23T195612.951.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-23T195616.046.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-23T195618.818.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-23T195610.082.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-23T195610.082.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-23T195612.951.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-23T195616.046.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-23T195618.818.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Away Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -150,7 +183,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Messi",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -159,10 +192,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-04T184705.594.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-04T184708.446.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-04T184705.594.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-04T184705.594.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-04T184708.446.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Away Kit featuring Messi's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -193,12 +236,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "3XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": false,
+      "XL": true,
+      "XXL": false,
+      "3XL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-23T195243.112.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-23T195245.747.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-23T195249.059.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-23T195253.442.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-23T195243.112.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-23T195243.112.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-23T195245.747.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-23T195249.059.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-23T195253.442.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Away Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -231,12 +285,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/f-2026-04-27T162318.743.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-27T162324.426.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-27T162331.473.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-27T162328.453.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/f-2026-04-27T162318.743.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/f-2026-04-27T162318.743.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-27T162324.426.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-27T162331.473.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-27T162328.453.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Away Kit featuring Pedri's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -268,12 +333,22 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": true,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-20T180719.447_c6f8cd5b-bfe0-41b8-9c29-a04be7181ffa.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-20T180722.028_78627df3-6e3a-49ad-b559-75addf3fe4b5.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2025-12-20T180725.278_7e34daa6-c0f5-42ff-8ef9-211580019770.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-20T180729.507_2b437903-2855-4d63-9547-5d5c99f62768.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2025-12-20T180719.447_c6f8cd5b-bfe0-41b8-9c29-a04be7181ffa.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2025-12-20T180719.447_c6f8cd5b-bfe0-41b8-9c29-a04be7181ffa.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2025-12-20T180722.028_78627df3-6e3a-49ad-b559-75addf3fe4b5.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2025-12-20T180725.278_7e34daa6-c0f5-42ff-8ef9-211580019770.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2025-12-20T180729.507_2b437903-2855-4d63-9547-5d5c99f62768.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -297,7 +372,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Pedri",
     "type": "Standard",
     "badge": "ESP",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -306,10 +381,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": false,
+      "XL": true,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-01T205506.421.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-01T205509.275.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T205506.421.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T205506.421.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-01T205509.275.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Away Kit featuring Pedri's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -340,11 +425,22 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "3XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "3XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-01T210627.100.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-01T210631.034.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-01T210633.957.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T210627.100.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T210627.100.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-01T210631.034.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-01T210633.957.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Home Kit featuring Neymer's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -367,7 +463,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Ronaldo",
     "type": "Standard",
     "badge": "POR",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -376,10 +472,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-18T222603.170.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-18T222606.495.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-18T222603.170.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-18T222603.170.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-18T222606.495.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Away Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -410,11 +516,22 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": false,
+      "XL": false,
+      "XXL": false,
+      "XXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-18T215742.572.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-04-18T215745.865.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B_-_2026-04-18T215748.398.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-18T215742.572.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-18T215742.572.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C_-_2026-04-18T215745.865.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B_-_2026-04-18T215748.398.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring Neymer's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -437,7 +554,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Neymer",
     "type": "Standard",
     "badge": "BRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -446,10 +563,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-21T212252.268.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-21T212255.093.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-21T212252.268.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-21T212252.268.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-21T212255.093.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Home Kit featuring Neymer's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -479,11 +606,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-23T194639.287.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-23T194641.964.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-23T194645.141.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-23T194639.287.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-23T194639.287.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-23T194641.964.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-23T194645.141.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Home Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -515,11 +652,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-13T193537.296.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-13T193540.266.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-13T193543.417.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-13T193537.296.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-13T193537.296.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-13T193540.266.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-13T193543.417.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Away Kit featuring Pedri's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -550,10 +697,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-01T201951.345.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-01T201953.732.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-01T201951.345.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-01T201951.345.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-01T201953.732.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Home Kit featuring Mbappe's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -585,12 +742,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-05T180201.854.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-05T180204.377.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-05T180206.933.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-05T180210.178.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-05T180201.854.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-03-05T180201.854.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-05T180204.377.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-05T180206.933.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-05T180210.178.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "1998 Brazil Home Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -623,12 +791,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-05T175818.664.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-05T175823.746.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-05T175821.002.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-05T175826.488.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-05T175818.664.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-03-05T175818.664.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-05T175823.746.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-05T175821.002.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-05T175826.488.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Mexico Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -650,7 +829,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Vini",
     "type": "Standard",
     "badge": "BRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -659,10 +838,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-27T221943.512.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-27T221945.899.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-27T221943.512.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-03-27T221943.512.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-27T221945.899.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring Vini's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -683,7 +872,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Minamino",
     "type": "Standard",
     "badge": "JPN",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -692,10 +881,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T221228.211.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T221230.944.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T221228.211.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T221228.211.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T221230.944.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Japan Away Kit featuring Minamino's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -716,7 +915,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Messi",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -725,10 +924,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-24T200806.168.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-24T200808.771.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-24T200806.168.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-24T200806.168.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-24T200808.771.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit featuring Messi's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -749,7 +958,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Neymer",
     "type": "Standard",
     "badge": "BRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -757,10 +966,19 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T220354.903.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T220357.481.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T220354.903.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T220354.903.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T220357.481.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring Neymer's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -790,11 +1008,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-06T204336.418.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-06T204339.382.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-06T204343.001.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-06T204336.418.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-02-06T204336.418.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-02-06T204339.382.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-02-06T204343.001.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2019 Brazil Away Kit featuring Neymer's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -826,12 +1054,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-15T170831.301.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T170845.936.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T170848.937.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-15T170852.835.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T170831.301.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T170831.301.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-15T170845.936.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-15T170848.937.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-15T170852.835.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -862,10 +1101,19 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": true,
+      "XL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-29T204547.037.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-29T204549.458.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T204547.037.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T204547.037.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-29T204549.458.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Third Kit featuring Musiala's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -888,7 +1136,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Belingham",
     "type": "Standard",
     "badge": "ENG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -897,10 +1145,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-07T164644.161.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-07T164648.646.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-07T164644.161.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-07T164644.161.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-07T164648.646.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 England Away Kit featuring Belingham's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -930,12 +1188,22 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": false,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-22T202105.462.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-22T202111.326.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-22T202108.251.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-22T202115.646.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-22T202105.462.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-03-22T202105.462.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-22T202111.326.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-22T202108.251.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-22T202115.646.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Home Kit featuring Mbappe's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -969,12 +1237,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false,
+      "XXXL": false
+    },
     "inStock": false,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-03-17T180518.877.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-03-17T180521.199.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-17T180523.774.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-03-17T180527.467.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-17T180518.877.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-03-17T180518.877.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-03-17T180521.199.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-17T180523.774.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-17T180527.467.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Home Kit featuring Lamine Yamal's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1006,11 +1285,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-26T175236.601.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-26T175240.494.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-26T175243.944.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-26T175236.601.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-02-26T175236.601.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-02-26T175240.494.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-02-26T175243.944.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit featuring Messi's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1042,11 +1331,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T210109.835_6087cdd8-d121-4d40-a45a-954a324cfe24.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-05T210113.199_198e571c-8948-4600-be48-912a13911df9.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T210116.716_bce6bfaf-dca1-4c9d-bede-09744c1718fb.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T210109.835_6087cdd8-d121-4d40-a45a-954a324cfe24.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T210109.835_6087cdd8-d121-4d40-a45a-954a324cfe24.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-05T210113.199_198e571c-8948-4600-be48-912a13911df9.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T210116.716_bce6bfaf-dca1-4c9d-bede-09744c1718fb.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1069,7 +1368,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Mbappe",
     "type": "Standard",
     "badge": "FRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1078,10 +1377,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": true,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T200944.547.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T200947.185.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T200944.547.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T200944.547.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T200947.185.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Away Kit featuring Mbappe's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1111,11 +1420,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": false,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-07T181716.920.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-07T181719.676.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-07T181722.500.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-07T181716.920.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-02-07T181716.920.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-02-07T181719.676.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-02-07T181722.500.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring Neymer's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1146,10 +1465,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T200046.609.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T200049.589.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T200046.609.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T200046.609.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T200049.589.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Uruguay Home Kit featuring Valverde's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1170,7 +1499,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Olise",
     "type": "Standard",
     "badge": "FRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1179,10 +1508,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": false,
+      "L": true,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-24T200614.190.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-24T200617.525.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-24T200614.190.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-24T200614.190.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-24T200617.525.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Away Kit featuring Olise's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1203,7 +1542,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Lamine Yamal",
     "type": "Standard",
     "badge": "ESP",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1212,10 +1551,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-30T174340.351.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-30T174343.249.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-30T174340.351.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-30T174340.351.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-30T174343.249.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Home Kit featuring Lamine Yamal's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1236,7 +1585,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Haaland",
     "type": "Standard",
     "badge": "NOR",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1245,10 +1594,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-29T203250.995.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-29T203254.448.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T203250.995.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T203250.995.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-29T203254.448.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Norway Away Kit featuring Haaland's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1269,7 +1628,7 @@ export const JERSEYS: Jersey[] = [
     "player": "De Jong",
     "type": "Standard",
     "badge": "NED",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1278,10 +1637,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": true,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T201109.305.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T201111.738.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T201109.305.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T201109.305.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T201111.738.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Netherlands Away Kit featuring De Jong's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1312,11 +1681,22 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": false,
+      "XXL": false,
+      "XXXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-15T165435.152.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-15T165438.608.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-15T165442.346.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T165435.152.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T165435.152.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-15T165438.608.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-15T165442.346.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Japan Away Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1348,11 +1728,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": true,
+      "XXXL": true,
+      "XXXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T185214.244.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T185216.873.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T185220.743.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T185214.244.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T185214.244.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T185216.873.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T185220.743.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1385,11 +1776,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": true,
+      "L": false,
+      "XL": false,
+      "XXL": false,
+      "XXXL": false,
+      "XXXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T190114.263.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T190117.196.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T190120.976.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T190114.263.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T190114.263.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T190117.196.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1413,7 +1815,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Raphina",
     "type": "Standard",
     "badge": "BRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1422,10 +1824,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T220808.406.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T220812.037.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T220808.406.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T220808.406.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T220812.037.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring Raphina's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1446,7 +1858,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Ronaldo",
     "type": "Standard",
     "badge": "POR",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 649,
     "sizes": [
       "S",
@@ -1455,14 +1867,24 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-02T182738.750.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-02T182741.995.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-02T182745.267.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-02-02T182937.305.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-02T182940.253.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C_-_2026-02-02T182943.534.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-02T182738.750.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-02-02T182738.750.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-02-02T182741.995.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-02-02T182745.267.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F_-_2026-02-02T182937.305.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C_-_2026-02-02T182940.253.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C_-_2026-02-02T182943.534.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Home Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1493,11 +1915,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-12T202844.225.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-12T202846.951.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-12T202850.334.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-12T202844.225.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-12T202844.225.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-12T202846.951.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-12T202850.334.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 England Home Kit featuring Belingham's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1528,11 +1960,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T194947.402.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-19T194950.123.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T194954.100.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T194947.402.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T194947.402.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-19T194950.123.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T194954.100.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Away Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1565,11 +2007,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": true,
+      "L": false,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true,
+      "XXXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T194009.400.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T194013.191.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T190120.976_c08b28e6-47cb-46a7-b0cb-e356c387e4b1.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194009.400.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194009.400.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194013.191.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976_c08b28e6-47cb-46a7-b0cb-e356c387e4b1.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1593,7 +2046,7 @@ export const JERSEYS: Jersey[] = [
     "player": "E.Martinez",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -1601,10 +2054,19 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F31_6_c63d78bf-b54a-4428-9a0b-99633ad3b6e7.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-11-22T163118.580_758affb1-a715-4f6b-ae88-b0ff7e2f0015.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F31_6_c63d78bf-b54a-4428-9a0b-99633ad3b6e7.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F31_6_c63d78bf-b54a-4428-9a0b-99633ad3b6e7.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2025-11-22T163118.580_758affb1-a715-4f6b-ae88-b0ff7e2f0015.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit featuring E.Martinez's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1626,7 +2088,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Modric",
     "type": "Standard",
     "badge": "CRO",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1635,10 +2097,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T195812.775.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T195815.958.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T195812.775.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T195812.775.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T195815.958.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Croatia Away Kit featuring Modric's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1669,11 +2141,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": true,
+      "XXXL": true,
+      "XXXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T194431.018.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T194437.332.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T194433.876.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194431.018.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194431.018.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194437.332.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194433.876.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Italy Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1705,10 +2188,19 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T194413.620.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T194416.573.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T194413.620.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T194413.620.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T194416.573.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Rcb Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1729,7 +2221,7 @@ export const JERSEYS: Jersey[] = [
     "player": "A.Becker",
     "type": "Standard",
     "badge": "BRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1738,10 +2230,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T201413.687.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T201416.404.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T201413.687.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T201413.687.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T201416.404.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring A.Becker's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1773,11 +2275,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": true,
+      "L": true,
+      "XL": false,
+      "XXL": true,
+      "XXXL": true,
+      "XXXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T194655.918.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T194658.405.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T190120.976_0f13ed38-8437-402a-8bf1-639bc5550304.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194655.918.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194655.918.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194658.405.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976_0f13ed38-8437-402a-8bf1-639bc5550304.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -1801,7 +2314,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Odegaard",
     "type": "Standard",
     "badge": "NOR",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1810,10 +2323,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T193834.786.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T193837.059.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T193834.786.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T193834.786.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T193837.059.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Norway Home Kit featuring Odegaard's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1843,11 +2366,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-04T190234.447.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-04T190237.615.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-04T190241.844.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-04T190234.447.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-04T190234.447.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-04T190237.615.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-04T190241.844.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Norway Home Kit featuring Haaland's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1869,7 +2402,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Rodrigo",
     "type": "Standard",
     "badge": "ESP",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1878,10 +2411,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-29T201320.457.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-29T201323.237.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T201320.457.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T201320.457.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-29T201323.237.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Away Kit featuring Rodrigo's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1911,11 +2454,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-04T190439.153.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-04T190442.246.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-04T190445.828.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-04T190439.153.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-04T190439.153.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-04T190442.246.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-04T190445.828.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 England Home Kit featuring Kane's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1937,7 +2490,7 @@ export const JERSEYS: Jersey[] = [
     "player": "De Jong",
     "type": "Standard",
     "badge": "NED",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1946,10 +2499,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T173158.312.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T173201.145.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T173158.312.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T173158.312.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T173201.145.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Netherland Home Kit featuring De Jong's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -1970,7 +2533,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Dembele",
     "type": "Standard",
     "badge": "FRA",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -1979,10 +2542,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T194252.547_530d3590-b086-41b9-8cd3-13fa03929c1d.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T194255.130_244baaa7-2cec-4d84-b7e6-6b116dad983a.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T194252.547_530d3590-b086-41b9-8cd3-13fa03929c1d.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T194252.547_530d3590-b086-41b9-8cd3-13fa03929c1d.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T194255.130_244baaa7-2cec-4d84-b7e6-6b116dad983a.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Away Kit featuring Dembele's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2012,11 +2585,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-13T193243.422.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-13T193246.129.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-13T193249.248.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-13T193243.422.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-13T193243.422.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-13T193246.129.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-13T193249.248.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Away Kit featuring Raphina's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2048,11 +2631,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": true,
+      "L": false,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true,
+      "XXXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T194228.317.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T194231.436.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T190120.976_4ff2b1af-92b2-42a8-834c-bd1c3ea0d107.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194228.317.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194228.317.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194231.436.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976_4ff2b1af-92b2-42a8-834c-bd1c3ea0d107.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Brazil Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -2085,11 +2679,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-30T174859.330.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-04-30T174902.661.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-30T174905.785.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-30T174859.330.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-30T174859.330.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-30T174902.661.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-30T174905.785.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 England Away Kit featuring Bellingham's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2111,7 +2715,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "JPN",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -2120,10 +2724,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": false,
+      "L": false,
+      "XL": false,
+      "XXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-16T163436.458_503fb0ef-5dad-4770-88de-651557efaa53.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-16T163439.970_28729079-6147-467d-a830-e8cf8248eb07.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2025-12-16T163436.458_503fb0ef-5dad-4770-88de-651557efaa53.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2025-12-16T163436.458_503fb0ef-5dad-4770-88de-651557efaa53.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2025-12-16T163439.970_28729079-6147-467d-a830-e8cf8248eb07.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Japan Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2143,7 +2757,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Belingham",
     "type": "Standard",
     "badge": "ENG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -2152,10 +2766,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-29T202138.501.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-29T202141.628.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T202138.501.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-29T202138.501.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-29T202141.628.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 England Away Kit featuring Belingham's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2176,7 +2800,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "JPN",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 449,
     "sizes": [
       "S",
@@ -2185,11 +2809,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T175307.165.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-05T175310.111.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T175313.472.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T175307.165.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T175307.165.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-05T175310.111.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T175313.472.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Japan Away Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2209,7 +2843,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Messi",
     "type": "Premium",
     "badge": "ARG",
-    "originalPrice": 699,
+    "originalPrice": 599,
     "discountedPrice": 549,
     "sizes": [
       "S",
@@ -2218,11 +2852,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202525.383.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T202529.277.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T202531.980.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T202525.383.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T202525.383.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T202529.277.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T202531.980.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Away Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -2246,7 +2890,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Ronaldo",
     "type": "Standard",
     "badge": "POR",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -2255,10 +2899,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T185601.974.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T185605.201.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T185601.974.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T185601.974.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T185605.201.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Home Kit featuring Ronaldo's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2288,10 +2942,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T193458.584.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T193501.070.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T193458.584.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T193458.584.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T193501.070.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Home Kit featuring Doue's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2313,7 +2977,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Mbappe",
     "type": "Standard",
     "badge": "FRA",
-    "originalPrice": 699,
+    "originalPrice": 599,
     "discountedPrice": 549,
     "sizes": [
       "S",
@@ -2322,11 +2986,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T192739.301.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-19T192742.321.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T192745.668.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T192739.301.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T192739.301.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-19T192742.321.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T192745.668.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Home Kit featuring Mbappe's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2360,11 +3034,22 @@ export const JERSEYS: Jersey[] = [
       "XXXL",
       "XXXXL"
     ],
+    "sizeStock": {
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true,
+      "XXXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T194857.634.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T194901.992.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T194905.366.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194857.634.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194857.634.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194901.992.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T194905.366.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 France Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -2388,7 +3073,7 @@ export const JERSEYS: Jersey[] = [
     "player": "De Paul",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -2397,10 +3082,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-01T204832.983_ae9bd35e-af8c-44f8-85b2-d11e209cda38.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-01T204852.199.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T204832.983_ae9bd35e-af8c-44f8-85b2-d11e209cda38.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T204832.983_ae9bd35e-af8c-44f8-85b2-d11e209cda38.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-01T204852.199.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Away Kit featuring De Paul's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2421,7 +3116,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Alvarez",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -2430,10 +3125,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": false,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T173649.416.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T173652.802.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T173649.416.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T173649.416.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T173652.802.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Away Kit featuring Alvarez's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2454,7 +3159,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Neuer",
     "type": "Standard",
     "badge": "GER",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -2463,10 +3168,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T183915.105.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T183918.576.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T183915.105.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T183915.105.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T183918.576.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Home Kit featuring Neuer's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2498,12 +3213,23 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T210519.628.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T210716.035.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T210718.218.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T210721.031.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T210519.628.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T210519.628.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T210716.035.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T210718.218.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T210721.031.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Spain Home Kit featuring Pedri's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -2526,16 +3252,23 @@ export const JERSEYS: Jersey[] = [
     "player": "Messi",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "M",
       "S"
     ],
+    "sizeStock": {
+      "M": false,
+      "S": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2025-12-16T163606.194_24aeeddb-17ec-4938-a4da-6bbc010091a4.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2025-12-16T163609.156_f23e14db-d47f-4d61-880c-4705710d84a9.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2025-12-16T163606.194_24aeeddb-17ec-4938-a4da-6bbc010091a4.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2025-12-16T163606.194_24aeeddb-17ec-4938-a4da-6bbc010091a4.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2025-12-16T163609.156_f23e14db-d47f-4d61-880c-4705710d84a9.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit featuring Messi's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2566,11 +3299,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T203446.373.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T203449.228.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T203452.066.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T203446.373.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T203446.373.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T203449.228.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T203452.066.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -2593,7 +3336,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Saka",
     "type": "Standard",
     "badge": "ENG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -2602,10 +3345,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-04-19T202239.809.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-04-19T202242.159.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T202239.809.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T202239.809.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-19T202242.159.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 England Away Kit featuring Saka's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2636,11 +3389,22 @@ export const JERSEYS: Jersey[] = [
       "XXL",
       "XXXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T205528.167.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T205530.514.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T205534.306.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T205528.167.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T205528.167.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T205530.514.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T205534.306.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Away Kit featuring Musiala's name & number. Premium quality replica available from Thayyil Sports.",
     "tags": [
@@ -2664,7 +3428,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "MEX",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 449,
     "sizes": [
       "S",
@@ -2673,11 +3437,21 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-09T181846.503.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-09T181850.290.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-09T181854.147.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T181846.503.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T181846.503.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T181850.290.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T181854.147.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Mexico Away Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2705,11 +3479,20 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": false
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-02-27T182257.107.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-02-27T182300.610.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-02-27T182304.385.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-27T182257.107.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-02-27T182257.107.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-02-27T182300.610.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-02-27T182304.385.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2731,7 +3514,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Wirtz",
     "type": "Standard",
     "badge": "GER",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -2740,10 +3523,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T183119.088.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T183122.041.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T183119.088.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T183119.088.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T183122.041.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Home Kit featuring Wirtz's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2764,7 +3557,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "UNK",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -2773,13 +3566,23 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T184800.939.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-05-20T185234.738.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T184807.628.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T184804.237.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T184811.645.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T184800.939.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T184800.939.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F_-_2026-05-20T185234.738.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T184807.628.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T184804.237.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T184811.645.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2006 Unknown Third Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2798,7 +3601,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Luis Diaz",
     "type": "Standard",
     "badge": "COL",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -2807,10 +3610,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T173850.574.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T173853.300.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T173850.574.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T173850.574.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T173853.300.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Columbia Away Kit featuring Luis Diaz's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2831,7 +3644,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Wirtz",
     "type": "Standard",
     "badge": "GER",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -2840,10 +3653,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T191426.242.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T191429.280.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T191426.242.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T191426.242.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T191429.280.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Germany Away Kit featuring Wirtz's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2864,7 +3687,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Modric",
     "type": "Standard",
     "badge": "CRO",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 439,
     "sizes": [
       "S",
@@ -2873,10 +3696,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-05T174333.577.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-05T174336.872.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T174333.577.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T174333.577.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T174336.872.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Croatia Home Kit featuring Modric's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2897,7 +3730,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "POR",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -2905,13 +3738,22 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": false,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T201531.512.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T201529.641.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T201354.267.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T201356.445.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T201359.165.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T201531.512.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T201531.512.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T201529.641.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T201354.267.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T201356.445.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T201359.165.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Away Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2931,7 +3773,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "UNK",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -2939,12 +3781,21 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195021.405.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195238.966.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195023.741.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T195026.535.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195021.405.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195021.405.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195238.966.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T195023.741.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T195026.535.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2008 Unknown Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2963,7 +3814,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "POR",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -2971,12 +3822,21 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202016.336.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T202032.507.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T202018.514.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T202021.109.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T202016.336.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T202016.336.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T202032.507.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T202018.514.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T202021.109.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Portugal Third Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -2996,7 +3856,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "UNK",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -3004,13 +3864,22 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195825.673.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195844.468.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195850.543.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195828.245.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T195834.220.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195825.673.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195825.673.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195844.468.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T195850.543.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T195828.245.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T195834.220.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2006 Unknown Away Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -3029,7 +3898,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "FRA",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -3037,13 +3906,22 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T195439.593.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F_-_2026-05-20T195450.972.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195442.318.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T195444.955.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T195447.798.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195439.593.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T195439.593.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F_-_2026-05-20T195450.972.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T195442.318.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T195444.955.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T195447.798.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "1998 France Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -3063,7 +3941,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -3071,13 +3949,22 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T194517.728.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T194530.633.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T194523.967.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T194520.770.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T194527.513.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T194517.728.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T194517.728.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T194530.633.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T194523.967.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T194520.770.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T194527.513.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -3097,7 +3984,7 @@ export const JERSEYS: Jersey[] = [
     "player": "",
     "type": "Standard",
     "badge": "UNK",
-    "originalPrice": 749,
+    "originalPrice": 899,
     "discountedPrice": 899,
     "sizes": [
       "S",
@@ -3105,12 +3992,21 @@ export const JERSEYS: Jersey[] = [
       "L",
       "XL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T175850.243.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-20T175836.419.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/C-2026-05-20T175839.991.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-20T175843.743.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T175850.243.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T175850.243.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T175836.419.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-20T175839.991.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T175843.743.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2008 Unknown Home Kit. Standard quality replica available from Thayyil Sports.",
     "tags": [
@@ -3129,7 +4025,7 @@ export const JERSEYS: Jersey[] = [
     "player": "Martinez",
     "type": "Standard",
     "badge": "ARG",
-    "originalPrice": 499,
+    "originalPrice": 599,
     "discountedPrice": 419,
     "sizes": [
       "S",
@@ -3138,10 +4034,20 @@ export const JERSEYS: Jersey[] = [
       "XL",
       "XXL"
     ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true
+    },
     "inStock": true,
     "images": [
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/F-2026-05-19T184649.107.webp",
-      "https://cdn.shopify.com/s/files/1/0953/2398/0087/files/B-2026-05-19T184651.934.webp"
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T184649.107.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T184649.107.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T184651.934.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
     "description": "2026 Argentina Away Kit featuring Martinez's name & number. Standard quality replica available from Thayyil Sports.",
     "tags": [

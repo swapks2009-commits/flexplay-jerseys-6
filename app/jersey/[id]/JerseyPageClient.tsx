@@ -172,6 +172,8 @@ export default function JerseyPageClient({ id }: { id: string }) {
 
   function handleOrderClick() {
     if (!selectedSize) { setSizeError(true); return }
+    const isInStock = jersey.sizeStock?.[selectedSize] ?? true
+    if (!isInStock) { setSizeError(true); return }
     setShowOrder(true)
   }
 
@@ -282,18 +284,31 @@ export default function JerseyPageClient({ id }: { id: string }) {
               <SizeGuide />
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {(jersey.sizes ?? []).map(s => (
-                <button key={s} onClick={() => { setSelectedSize(s); setSizeError(false) }}
-                  style={{
-                    padding: '8px 18px', borderRadius: 6, fontSize: 14, fontWeight: 500, cursor: 'pointer',
-                    background: selectedSize === s ? '#111' : 'white',
-                    color: selectedSize === s ? 'white' : '#111',
-                    border: selectedSize === s ? '1px solid #111' : '1px solid #ccc',
-                    transition: 'all 0.15s',
-                  }}>
-                  {s}
-                </button>
-              ))}
+              {(jersey.sizes ?? []).map(s => {
+                const isInStock = jersey.sizeStock?.[s] ?? true
+                return (
+                  <button key={s} 
+                    onClick={() => { 
+                      if (isInStock) {
+                        setSelectedSize(s); 
+                        setSizeError(false)
+                      }
+                    }}
+                    disabled={!isInStock}
+                    title={!isInStock ? 'Out of stock' : ''}
+                    style={{
+                      padding: '8px 18px', borderRadius: 6, fontSize: 14, fontWeight: 500,
+                      cursor: isInStock ? 'pointer' : 'not-allowed',
+                      background: selectedSize === s && isInStock ? '#111' : isInStock ? 'white' : '#f0f0f0',
+                      color: selectedSize === s && isInStock ? 'white' : isInStock ? '#111' : '#999',
+                      border: selectedSize === s && isInStock ? '1px solid #111' : isInStock ? '1px solid #ccc' : '1px solid #d0d0d0',
+                      transition: 'all 0.15s',
+                      textDecoration: !isInStock ? 'line-through' : 'none',
+                    }}>
+                    {s}
+                  </button>
+                )
+              })}
             </div>
           </div>
 
