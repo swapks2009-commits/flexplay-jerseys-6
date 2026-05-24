@@ -65,7 +65,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B_-_2026-02-23T182308.911.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Argentina Home Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Argentina Home Kit featuring Messi's name & number.  ",
     "tags": [
       "Argentina",
       "Messi",
@@ -111,7 +111,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2025-12-30T201422.543_c2283c23-1017-4b72-a636-a08c6949d4eb.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Portugal Third Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Portugal Third Kit featuring Ronaldo's name & number.  ",
     "tags": [
       "Portugal",
       "Ronaldo",
@@ -162,7 +162,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-23T195618.818.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Argentina Away Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Argentina Away Kit featuring Messi's name & number.  ",
     "tags": [
       "Argentina",
       "Messi",
@@ -254,7 +254,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-23T195253.442.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Portugal Away Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Portugal Away Kit featuring Ronaldo's name & number.  ",
     "tags": [
       "Portugal",
       "Ronaldo",
@@ -303,7 +303,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/C-2026-04-27T162328.453.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Spain Away Kit featuring Pedri's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Spain Away Kit featuring Pedri's name & number.  ",
     "tags": [
       "Spain",
       "Pedri",
@@ -350,7 +350,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2025-12-20T180729.507_2b437903-2855-4d63-9547-5d5c99f62768.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Germany Home Kit.  ",
     "tags": [
       "Germany",
       "Home",
@@ -442,7 +442,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-01T210633.957.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Brazil Home Kit featuring Neymer's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Brazil Home Kit featuring Neymer's name & number.  ",
     "tags": [
       "Brazil",
       "Neymer",
@@ -533,7 +533,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B_-_2026-04-18T215748.398.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Brazil Away Kit featuring Neymer's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Brazil Away Kit featuring Neymer's name & number.  ",
     "tags": [
       "Brazil",
       "Neymer",
@@ -622,7 +622,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-04-23T194645.141.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Portugal Home Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Portugal Home Kit featuring Ronaldo's name & number.  ",
     "tags": [
       "Portugal",
       "Ronaldo",
@@ -760,7 +760,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-05T180210.178.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "1998 Brazil Home Kit featuring Ronaldo's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "1998 Brazil Home Kit featuring Ronaldo's name & number.  ",
     "tags": [
       "Brazil",
       "Ronaldo",
@@ -809,7 +809,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-05T175826.488.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Mexico Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Mexico Home Kit.  ",
     "tags": [
       "Mexico",
       "Home",
@@ -1072,7 +1072,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-15T170852.835.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Argentina Home Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Argentina Home Kit featuring Messi's name & number.  ",
     "tags": [
       "Argentina",
       "Messi",
@@ -1205,7 +1205,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-22T202115.646.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 France Home Kit featuring Mbappe's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 France Home Kit featuring Mbappe's name & number.  ",
     "tags": [
       "France",
       "Mbappe",
@@ -1255,7 +1255,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-03-17T180527.467.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Spain Home Kit featuring Lamine Yamal's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Spain Home Kit featuring Lamine Yamal's name & number.  ",
     "tags": [
       "Spain",
       "Lamine Yamal",
@@ -1347,7 +1347,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-05T210116.716_bce6bfaf-dca1-4c9d-bede-09744c1718fb.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Argentina Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Argentina Home Kit.  ",
     "tags": [
       "Argentina",
       "Home",
@@ -1698,7 +1698,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-15T165442.346.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Japan Away Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Japan Away Kit.  ",
     "tags": [
       "Japan",
       "Away",
@@ -1793,7 +1793,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Argentina Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Argentina Home Kit.  ",
     "tags": [
       "Argentina",
       "Home",
@@ -2024,7 +2024,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976_c08b28e6-47cb-46a7-b0cb-e356c387e4b1.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Germany Home Kit.  ",
     "tags": [
       "Germany",
       "Home",
@@ -2158,7 +2158,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-09T194433.876.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Italy Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Italy Home Kit.  ",
     "tags": [
       "Italy",
       "Home",
@@ -2292,7 +2292,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976_0f13ed38-8437-402a-8bf1-639bc5550304.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Portugal Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Portugal Home Kit.  ",
     "tags": [
       "Portugal",
       "Home",
@@ -2648,7 +2648,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T190120.976_4ff2b1af-92b2-42a8-834c-bd1c3ea0d107.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Brazil Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Brazil Home Kit.  ",
     "tags": [
       "Brazil",
       "Home",
@@ -2868,7 +2868,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T202531.980.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Argentina Away Kit featuring Messi's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Argentina Away Kit featuring Messi's name & number.  ",
     "tags": [
       "Argentina",
       "Messi",
@@ -3051,7 +3051,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-09T194905.366.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 France Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 France Home Kit.  ",
     "tags": [
       "France",
       "Home",
@@ -3231,7 +3231,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T210721.031.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Spain Home Kit featuring Pedri's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Spain Home Kit featuring Pedri's name & number.  ",
     "tags": [
       "Spain",
       "Pedri",
@@ -3315,7 +3315,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T203452.066.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Germany Home Kit. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Germany Home Kit.  ",
     "tags": [
       "Germany",
       "Home",
@@ -3406,7 +3406,7 @@ export const JERSEYS: Jersey[] = [
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-20T205534.306.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 Germany Away Kit featuring Musiala's name & number. Premium quality replica available from Thayyil Sports.",
+    "description": "2026 Germany Away Kit featuring Musiala's name & number.  ",
     "tags": [
       "Germany",
       "Musiala",
