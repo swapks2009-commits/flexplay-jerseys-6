@@ -6,6 +6,7 @@ import type { Jersey } from '@/constants/jerseys'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppModal from '@/components/WhatsAppModal'
+import ShareButton from '@/components/ShareButton'
 
 const COUNTRY_COLORS: Record<string, [string, string]> = {
   Argentina: ['#74b9e8', '#ffffff'],
@@ -234,14 +235,14 @@ export default function JerseyPageClient({ id }: { id: string }) {
               jersey={jersey}
               style={{ minHeight: 320 }}
             />
-            {slots.length > 1 && (
-              <>
-                <button onClick={() => setActiveIdx(i => (i - 1 + slots.length) % slots.length)}
-                  style={{ position: 'absolute', left: 10, top: '50%', transform: 'translateY(-50%)', width: 34, height: 34, borderRadius: '50%', background: 'white', border: '1px solid #e5e5e5', cursor: 'pointer', fontSize: 20, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>‹</button>
-                <button onClick={() => setActiveIdx(i => (i + 1) % slots.length)}
-                  style={{ position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)', width: 34, height: 34, borderRadius: '50%', background: 'white', border: '1px solid #e5e5e5', cursor: 'pointer', fontSize: 20, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>›</button>
-              </>
-            )}
+            {/* Share button on image */}
+            <div style={{ position: 'absolute', top: 4, right: 4, zIndex: 10 }}>
+              <ShareButton 
+                productName={jersey.name}
+                productUrl={typeof window !== 'undefined' ? window.location.href : `https://flexplay-jerseys.netlify.app/jersey/${jersey.id}`}
+                isIcon={true}
+              />
+            </div>
           </div>
         </div>
 
