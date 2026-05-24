@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, type MouseEvent } from 'react'
 
 interface ShareButtonProps {
   productName: string
@@ -14,7 +14,7 @@ export default function ShareButton({ productName, productUrl, isIcon = false }:
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const buttonRef = useRef<HTMLButtonElement>(null)
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (e?: MouseEvent<HTMLButtonElement>) => {
     setShowTooltip(true)
     if (buttonRef.current && isIcon) {
       const rect = buttonRef.current.getBoundingClientRect()
@@ -23,10 +23,16 @@ export default function ShareButton({ productName, productUrl, isIcon = false }:
         left: rect.left + rect.width / 2,
       })
     }
+    if (e) {
+      e.currentTarget.style.background = 'rgba(0,0,0,0.08)'
+    }
   }
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (e?: MouseEvent<HTMLButtonElement>) => {
     setShowTooltip(false)
+    if (e) {
+      e.currentTarget.style.background = 'transparent'
+    }
   }
 
   async function handleShare() {
@@ -73,8 +79,8 @@ export default function ShareButton({ productName, productUrl, isIcon = false }:
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: 44,
-            height: 44,
+            width: 54,
+            height: 54,
             background: 'transparent',
             color: '#111',
             border: 'none',
@@ -83,14 +89,8 @@ export default function ShareButton({ productName, productUrl, isIcon = false }:
             transition: 'all 0.15s',
             flexShrink: 0,
           }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(0,0,0,0.08)'
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'transparent'
-          }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="18" cy="5" r="3"></circle>
             <circle cx="6" cy="12" r="3"></circle>
             <circle cx="18" cy="19" r="3"></circle>
