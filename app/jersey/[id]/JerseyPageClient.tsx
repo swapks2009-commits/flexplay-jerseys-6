@@ -6,6 +6,7 @@ import type { Jersey } from '@/constants/jerseys'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppModal from '@/components/WhatsAppModal'
+import ShareButton from '@/components/ShareButton'
 
 const COUNTRY_COLORS: Record<string, [string, string]> = {
   Argentina: ['#74b9e8', '#ffffff'],
@@ -234,6 +235,14 @@ export default function JerseyPageClient({ id }: { id: string }) {
               jersey={jersey}
               style={{ minHeight: 320 }}
             />
+            {/* Share button on image */}
+            <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10 }}>
+              <ShareButton 
+                productName={jersey.name}
+                productUrl={typeof window !== 'undefined' ? window.location.href : `https://flexplay-jerseys.netlify.app/jersey/${jersey.id}`}
+                isIcon={true}
+              />
+            </div>
             {slots.length > 1 && (
               <>
                 <button onClick={() => setActiveIdx(i => (i - 1 + slots.length) % slots.length)}
