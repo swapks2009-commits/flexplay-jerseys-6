@@ -79,8 +79,8 @@ export default function ShareButton({ productName, productUrl, isIcon = false }:
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: 44,
-            height: 44,
+            width: 54,
+            height: 54,
             background: 'transparent',
             color: '#111',
             border: 'none',
@@ -90,7 +90,7 @@ export default function ShareButton({ productName, productUrl, isIcon = false }:
             flexShrink: 0,
           }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="18" cy="5" r="3"></circle>
             <circle cx="6" cy="12" r="3"></circle>
             <circle cx="18" cy="19" r="3"></circle>
