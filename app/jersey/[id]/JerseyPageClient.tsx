@@ -171,6 +171,11 @@ export default function JerseyPageClient({ id }: { id: string }) {
 
   const discount = Math.round(((jersey.originalPrice - jersey.discountedPrice) / jersey.originalPrice) * 100)
 
+  // Construct product URL - use the dynamic origin if available, fallback to absolute URL
+  const productUrl = typeof window !== 'undefined' 
+    ? `${window.location.origin}/jersey/${jersey.id}`
+    : `https://flexplay-jerseys.netlify.app/jersey/${jersey.id}`
+
   function handleOrderClick() {
     if (!selectedSize || !jersey) { setSizeError(true); return }
     const isInStock = jersey.sizeStock?.[selectedSize] ?? true
@@ -239,7 +244,7 @@ export default function JerseyPageClient({ id }: { id: string }) {
             <div style={{ position: 'absolute', top: 4, right: 4, zIndex: 10 }}>
               <ShareButton 
                 productName={jersey.name}
-                productUrl={typeof window !== 'undefined' ? window.location.href : `https://flexplay-jerseys.netlify.app/jersey/${jersey.id}`}
+                productUrl={productUrl}
                 isIcon={true}
               />
             </div>
