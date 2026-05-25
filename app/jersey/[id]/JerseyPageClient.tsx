@@ -272,7 +272,6 @@ export default function JerseyPageClient({ id }: { id: string }) {
           <p style={{ fontSize: 24, fontWeight: 700, color: '#111', margin: '-8px 0 0' }} className="sm:text-3xl">
             Rs. {(jersey.discountedPrice ?? 0).toLocaleString('en-IN')}.00
           </p>
-          <p style={{ fontSize: 12, color: '#aaa', marginTop: -8 }}>Shipping calculated at checkout.</p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <span style={{ width: 9, height: 9, borderRadius: '50%', background: jersey.inStock ? '#22c55e' : '#f87171', display: 'inline-block' }} />

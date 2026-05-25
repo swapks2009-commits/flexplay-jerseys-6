@@ -213,7 +213,6 @@ export default function JerseyModal({ jersey, onClose, onOrder }: Props) {
             <p style={{ fontSize: 22, fontWeight: 700, color: '#111', margin: '-8px 0 0' }}>
               Rs. {(jersey.discountedPrice ?? 0).toLocaleString('en-IN')}.00
             </p>
-            <p style={{ fontSize: 11, color: '#aaa', marginTop: -8 }}>Shipping calculated at checkout.</p>
 
             {/* Stock */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
