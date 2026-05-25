@@ -90,7 +90,7 @@ export default function WhatsAppModal({ jersey, initialSize, onClose }: Props) {
       ``,
       `Ordered via FlexPlay Jerseys`,
       ``,
-      `Please confirm avialability of above product`,
+      `Please confirm availability of above product`,
     ].join('\n')
     window.open(`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`, '_blank')
     onClose()
