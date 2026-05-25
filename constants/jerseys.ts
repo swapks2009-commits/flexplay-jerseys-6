@@ -3510,7 +3510,7 @@ export const JERSEYS: Jersey[] = [
     "id": "acmilan-2006-third-kit-with-shorts-imported",
     "name": "AC Milan 2006 Third Kit With Shorts Imported",
     "shortName": "Unknown 2006 Third",
-    "country": "Acmilan",
+    "country": "AC Milan",
     "flag": "🏳",
     "year": 2006,
     "kit": "Third",
