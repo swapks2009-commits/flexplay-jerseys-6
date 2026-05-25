@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3 text-xs sm:text-sm tracking-widest uppercase" style={{ color: '#888' }}>Why FlexPlay</h4>
             <ul className="space-y-1.5 text-xs sm:text-sm" style={{ color: '#aaa' }}>
-              {['🏅 Premium embroidered crests','👕 Sizes S to XXXL','🚀 Fast delivery across India','💬 Personal WhatsApp support','✅ Quality guaranteed'].map(i => (
+              {['🏅 Premium embroidered crests','👕 Sizes S to XXXL','🚀 Fast and Free Delivery across India','💬 Personal WhatsApp support','✅ Quality guaranteed'].map(i => (
                 <li key={i}>{i}</li>
               ))}
             </ul>
