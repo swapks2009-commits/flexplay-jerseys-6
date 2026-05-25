@@ -2169,47 +2169,7 @@ export const JERSEYS: Jersey[] = [
       "T-Shirt"
     ]
   },
-  {
-    "id": "rcb-2026-maroon-striper-polo",
-    "name": "Rcb 2026 Maroon Striper Polo",
-    "shortName": "Rcb 2026 Home",
-    "country": "Rcb",
-    "flag": "🏏",
-    "year": 2026,
-    "kit": "Home",
-    "player": "",
-    "type": "Standard",
-    "badge": "RCB",
-    "originalPrice": 599,
-    "discountedPrice": 479,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "sizeStock": {
-      "S": true,
-      "M": true,
-      "L": true,
-      "XL": false
-    },
-    "inStock": true,
-    "images": [
-      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T194413.620.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
-      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-19T194413.620.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-19T194416.573.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
-    ],
-    "description": "2026 Rcb Home Kit. Standard quality replica available from Thayyil Sports.",
-    "tags": [
-      "Rcb",
-      "Home",
-      "2026",
-      "Polo"
-    ]
-  },
+ 
   {
     "id": "brazil-2026-away-gk-kit-a-becker",
     "name": "Brazil 2026 Away Gk Kit A.Becker",
