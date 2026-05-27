@@ -42,8 +42,8 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile Menu Button & Order Button */}
-        <div className="md:hidden flex items-center gap-2">
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -55,13 +55,6 @@ export default function Navbar() {
               <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
           </button>
-
-          {/* Order Button */}
-          <a href="https://wa.me/919156165683" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded text-white text-sm font-semibold"
-            style={{ background: 'var(--wa-green)' }}>
-            <WaIcon /> Order
-          </a>
         </div>
       </div>
 
