@@ -1,5 +1,5 @@
 'use client'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { JERSEYS, COUNTRIES } from '@/constants/jerseys'
 import Navbar from '@/components/Navbar'
@@ -10,6 +10,21 @@ import Ticker from '@/components/Ticker'
 
 export default function Home() {
   const router = useRouter()
+
+  useEffect(() => {
+    // Scroll to jersey grid on page load
+    const gridElement = document.getElementById('jerseyGrid')
+    if (gridElement) {
+      setTimeout(() => {
+        const elementPosition = gridElement.getBoundingClientRect().top + window.scrollY
+        const offsetPosition = elementPosition - 20 // Small top padding
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        })
+      }, 100)
+    }
+  }, [])
 
   const [filterCountry, setFilterCountry] = useState('All')
   const [filterType,    setFilterType]    = useState('All')
@@ -99,12 +114,14 @@ export default function Home() {
             <p style={{ fontSize: 13, marginTop: 4 }}>Try different filters.</p>
           </div>
         ) : (
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-            gap: '12px',
-          }}
-          className="sm:gap-4 md:gap-5 lg:gap-6"
+          <div
+            id="jerseyGrid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+              gap: '12px',
+            }}
+            className="sm:gap-4 md:gap-5 lg:gap-6"
           >
             {filtered.map(jersey => (
               <JerseyCard
