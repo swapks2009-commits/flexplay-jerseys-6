@@ -28,6 +28,9 @@ export default function Home() {
 
   const categoryPriority = ['All', 'World Cup', 'Clubs', 'FullSleeve', 'Jackets', 'F1', 'Shorts', 'IPL', 'Crop Top', 'Other']
 
+  // Sub-category priority for Clubs
+  const clubsPriority = ['Barcelona', 'Manchester', 'Alnassr', 'Chelsea', 'Acmilan', 'Arsanel', 'Liverpool', 'Real', 'Psg', 'Juventus', 'Intermilan', 'Intermiami', 'Monaco']
+
   // Get unique main categories and sort them by the requested priority sequence.
   const mainCategories = useMemo(() => {
     const cats = [...new Set(JERSEYS.map(j => j.mainCategory))]
@@ -43,7 +46,16 @@ export default function Home() {
       .filter(j => j.mainCategory === mainCat)
       .map(j => j.subCategory)
       .filter((v): v is string => !!v)
-    return [...new Set(subCats)].sort()
+    const uniqueSubCats = [...new Set(subCats)]
+    
+    // Apply priority ordering for Clubs
+    if (mainCat === 'Clubs') {
+      const ordered = clubsPriority.filter(c => uniqueSubCats.includes(c))
+      const remaining = uniqueSubCats.filter(c => !clubsPriority.includes(c)).sort()
+      return [...ordered, ...remaining]
+    }
+    
+    return uniqueSubCats.sort()
   }
 
   const [filterMainCategory, setFilterMainCategory] = useState('All')
@@ -58,14 +70,23 @@ export default function Home() {
     setFilterSubCategory('All')
   }, [filterMainCategory])
 
-  const filtered = useMemo(() => JERSEYS.filter(j => {
-    if (filterMainCategory !== 'All' && j.mainCategory !== filterMainCategory) return false
-    if (filterMainCategory !== 'IPL' && filterSubCategory !== 'All' && j.subCategory !== filterSubCategory) return false
-    if (filterStock === 'In Stock' && !j.inStock) return false
-    if (filterStock === 'Out of Stock' && j.inStock) return false
-    if (search && !j.name.toLowerCase().includes(search.toLowerCase())) return false
-    return true
-  }), [filterMainCategory, filterSubCategory, filterStock, search])
+  const filtered = useMemo(() => {
+    const results = JERSEYS.filter(j => {
+      if (filterMainCategory !== 'All' && j.mainCategory !== filterMainCategory) return false
+      if (filterMainCategory !== 'IPL' && filterSubCategory !== 'All' && j.subCategory !== filterSubCategory) return false
+      if (filterStock === 'In Stock' && !j.inStock) return false
+      if (filterStock === 'Out of Stock' && j.inStock) return false
+      if (search && !j.name.toLowerCase().includes(search.toLowerCase())) return false
+      return true
+    })
+    
+    // Sort with featured items first
+    return results.sort((a, b) => {
+      if (a.featured && !b.featured) return -1
+      if (!a.featured && b.featured) return 1
+      return 0
+    })
+  }, [filterMainCategory, filterSubCategory, filterStock, search])
 
   const pill = (active: boolean): React.CSSProperties => ({
     background: active ? '#111' : '#fff',
