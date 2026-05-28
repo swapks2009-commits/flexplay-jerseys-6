@@ -14,8 +14,7 @@ export type Jersey = {
   sizes: string[];
   sizeStock?: Record<string, boolean>;
   inStock: boolean;
-  mainCategory: string;
-  subCategory?: string;
+  
   // Put your own image URLs here — Cloudinary, Google Drive direct link, or your hosting
   // For now using placeholder service with jersey colors so cards look great
   images: string[];
@@ -27,6 +26,54 @@ export type Jersey = {
 // You can use: https://res.cloudinary.com/... or any direct image link
 // The placeholder colors below match each jersey's actual colors
 export const JERSEYS: Jersey[] =[
+  {
+    "id": "uruguay-2026-away-kit-valverde-embroidery-premium",
+    "name": "Uruguay 2026 Away Kit Valverde Embroidery Premium",
+    "shortName": "Uruguay 2026 Away – Valverde",
+    "country": "Uruguay",
+    "flag": "🇺🇾",
+    "year": 2026,
+    "kit": "Away",
+    "player": "Valverde",
+    "type": "Premium",
+    "badge": "URU",
+    "originalPrice": 741,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+    ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true
+    },
+    "inStock": true,
+    "images": [
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-27T215231.384.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-27T215231.384.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-27T215233.892.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-27T215236.706.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
+    ],
+    "description": "2026 Uruguay Away Kit featuring Valverde's name & number. ",
+    "tags": [
+      "Uruguay",
+      "Valverde",
+      "Away",
+      "2026",
+      "Premium",
+      "Embroidery"
+    ]
+  },
   {
     "id": "brazil-1998-white-kit-neymer-embroidery-premium",
     "name": "Brazil 1998 White Kit Neymer Embroidery Premium",
@@ -75,9 +122,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "morocco-2026-home-kit-hakimi",
@@ -118,9 +163,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Morocco"
+    ]
   },
   {
     "id": "manchester-united-beckham-special-edition-white-kit-fivesleeve-polo",
@@ -142,7 +185,7 @@ export const JERSEYS: Jersey[] =[
       "XL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": true,
       "XL": true
@@ -161,9 +204,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "real-madrid-1996-navy-concept-kit-carlos-fivesleeve-polo",
@@ -204,9 +245,7 @@ export const JERSEYS: Jersey[] =[
       "1996",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "brazil-2010-home-kit-kaka-fivesleeve-polo",
@@ -231,7 +270,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": true,
       "L": true,
-      "XL": true
+      "XL": false
     },
     "inStock": true,
     "images": [
@@ -248,9 +287,7 @@ export const JERSEYS: Jersey[] =[
       "2010",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "france-2026-away-kit-mbappe-embroidery-premium",
@@ -277,9 +314,9 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": true,
       "L": true,
-      "XL": false,
+      "XL": true,
       "XXL": true,
-      "3XL": false
+      "3XL": true
     },
     "inStock": true,
     "images": [
@@ -299,9 +336,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "real-madrid-25-26-home-kit-valverde-embroidery-premium-1",
@@ -348,9 +383,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "spain-2026-home-kit-pedri-embroidery-premium-1",
@@ -399,9 +432,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "germany-2026-away-kit-musiala-knitted-polo-embroidery-premium",
@@ -450,9 +481,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2026-home-kit-writz-knitted-polo-embroidery-premium-1",
@@ -498,9 +527,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "argentina-2026-away-kit-messi-fullsleeve-embroidery-premium",
@@ -526,10 +553,10 @@ export const JERSEYS: Jersey[] =[
       "S": false,
       "M": false,
       "L": false,
-      "XL": true,
+      "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-20T202525.383.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -547,8 +574,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "portugal-2026-black-kit-with-shorts-imported",
@@ -590,8 +616,7 @@ export const JERSEYS: Jersey[] =[
       "Portugal",
       "Third",
       "2026"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "portugal-2026-away-kit-with-shorts-imported-copy",
@@ -616,7 +641,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": false,
       "L": false,
-      "XL": true
+      "XL": false
     },
     "inStock": true,
     "images": [
@@ -634,8 +659,7 @@ export const JERSEYS: Jersey[] =[
       "Portugal",
       "Away",
       "2026"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "real-madrid-2006-away-kit-with-shorts-imported",
@@ -677,8 +701,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Away",
       "2006"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "france-1998-home-kit-with-shorts-imported",
@@ -721,8 +744,7 @@ export const JERSEYS: Jersey[] =[
       "France",
       "Home",
       "1998"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "barcelona-2008-09-home-kit-with-shorts-imported",
@@ -763,8 +785,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2008"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "argentina-2026-home-kit-with-shorts-imported",
@@ -807,8 +828,7 @@ export const JERSEYS: Jersey[] =[
       "Argentina",
       "Home",
       "2026"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "acmilan-2006-third-kit-with-shorts-imported",
@@ -852,8 +872,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Third",
       "2006"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "manchester-united-2008-home-kit-with-shorts-imported",
@@ -894,8 +913,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2008"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "portugal-2026-away-kit-ronaldo-fullsleeve-embroidery",
@@ -919,7 +937,7 @@ export const JERSEYS: Jersey[] =[
     ],
     "sizeStock": {
       "S": true,
-      "M": true,
+      "M": false,
       "L": false,
       "XL": true,
       "XXL": false
@@ -941,8 +959,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "rcb-2026-maroon-striper-polo",
@@ -983,9 +1000,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Rcb"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-neymer-fullsleeve-embroidery",
@@ -1031,8 +1046,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "france-2026-home-kit-mbappe-fullsleeve-polo-embroidery",
@@ -1079,8 +1093,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "germany-2026-away-kit-wirtz-1",
@@ -1123,9 +1136,7 @@ export const JERSEYS: Jersey[] =[
       "Wirtz",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "portugal-2026-home-kit-ronaldo-1",
@@ -1151,7 +1162,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": false,
       "L": false,
-      "XL": true,
+      "XL": false,
       "XXL": false
     },
     "inStock": true,
@@ -1168,9 +1179,7 @@ export const JERSEYS: Jersey[] =[
       "Ronaldo",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "argentina-2026-away-gk-kit-martinez",
@@ -1214,9 +1223,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Goalkeeper"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "germany-2026-home-gk-kit-neuer",
@@ -1260,9 +1267,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Goalkeeper"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2026-home-kit-wirtz",
@@ -1289,7 +1294,7 @@ export const JERSEYS: Jersey[] =[
       "M": true,
       "L": true,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -1305,9 +1310,7 @@ export const JERSEYS: Jersey[] =[
       "Wirtz",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "jamaica-2026-away-kit-fivesleeve",
@@ -1349,9 +1352,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Jamaica"
+    ]
   },
   {
     "id": "argentina-2026-home-kit-messi-embroidery-premium",
@@ -1400,9 +1401,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "japan-2026-away-kit-embroidery-premium",
@@ -1426,14 +1425,14 @@ export const JERSEYS: Jersey[] =[
       "XXXXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": false,
       "L": false,
       "XL": false,
       "XXL": false,
       "XXXXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T165435.152.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -1449,9 +1448,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "real-madrid-x-y-3-23-24-fourth-kit-bellingham-embroidery-premium",
@@ -1498,9 +1495,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "barcelona-2011-12-home-kit-messi-embroidery-premium",
@@ -1543,9 +1538,7 @@ export const JERSEYS: Jersey[] =[
       "2011",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-22-23-fourth-kit-messi-embroidery-premium",
@@ -1588,9 +1581,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "germany-20-21-away-kit-kroos-knitted-polo-embroidery-premium",
@@ -1638,9 +1629,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "acmilan-1997-98-away-kit-maldini-polo-embroidery-premium",
@@ -1687,9 +1676,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "manchester-united-1998-99-third-kit-beckham-fivesleeve-polo-embroidery-with-zip",
@@ -1734,9 +1721,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "barcelona-blaugrana-special-kit-fivesleeve-polo",
@@ -1778,9 +1763,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-x-travis-scott-cactus-jack-black-special-kit-fivesleeve-polo",
@@ -1804,7 +1787,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false
     },
     "inStock": true,
@@ -1821,9 +1804,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "france-fantasy-jersey-zidane-fivesleeve-polo-1",
@@ -1845,7 +1826,7 @@ export const JERSEYS: Jersey[] =[
       "XL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": true,
       "XL": true
@@ -1865,9 +1846,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "real-madrid-2017-18-home-kit-ronaldo-fullsleeve-embroidery",
@@ -1892,7 +1871,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": true,
       "M": false,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": true
     },
@@ -1912,8 +1891,7 @@ export const JERSEYS: Jersey[] =[
       "2017",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "juventus-2018-19-home-kit-ronaldo-fullsleeve-embroidery",
@@ -1958,8 +1936,7 @@ export const JERSEYS: Jersey[] =[
       "2018",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "spain-2026-away-kit-pedri-embroidery",
@@ -1986,9 +1963,9 @@ export const JERSEYS: Jersey[] =[
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-13T193537.296.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -2004,9 +1981,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-raphina-embroidery",
@@ -2051,9 +2026,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "tshirt-france-white-polo-embroidery-premium",
@@ -2102,9 +2075,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "tshirt-portugal-black-polo-embroidery-premium",
@@ -2129,7 +2100,7 @@ export const JERSEYS: Jersey[] =[
     ],
     "sizeStock": {
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": false,
       "XXXL": true,
@@ -2153,9 +2124,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "tshirt-italy-green-black-polo-embroidery-premium",
@@ -2204,9 +2173,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Italy"
+    ]
   },
   {
     "id": "tshirt-brazil-black-polo-embroidery-premium",
@@ -2234,10 +2201,10 @@ export const JERSEYS: Jersey[] =[
       "L": false,
       "XL": false,
       "XXL": false,
-      "XXXL": true,
+      "XXXL": false,
       "XXXXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T194228.317.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -2255,9 +2222,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "tshirt-germany-black-polo-embroidery-premium",
@@ -2306,9 +2271,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "tshirt-argentina-black-polo-embroidery-premum",
@@ -2357,9 +2320,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "tshirt-portugal-red-polo-embroidery-premum",
@@ -2386,11 +2347,11 @@ export const JERSEYS: Jersey[] =[
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true,
+      "XXL": false,
       "XXXL": false,
       "XXXXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-09T185214.244.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -2407,9 +2368,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "T-Shirt"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "portugal-1998-away-kit-rui-costa-fivesleeve-polo-embroidery-premium",
@@ -2454,9 +2413,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "mexico-2026-away-kit",
@@ -2499,9 +2456,7 @@ export const JERSEYS: Jersey[] =[
       "Mexico",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Mexico"
+    ]
   },
   {
     "id": "real-madrid-25-26-home-valverde-1",
@@ -2543,9 +2498,7 @@ export const JERSEYS: Jersey[] =[
       "Valverde",
       "Home",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "liverpool-1995-black-kit-polo-embroidery-premium",
@@ -2592,9 +2545,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "argentina-2026-tiro-polo-embroidery-premium",
@@ -2619,7 +2570,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": false
     },
@@ -2640,9 +2591,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "barcelona-1996-97-ronaldinho-concept-kit-fivesleeve-polo-embroidery",
@@ -2687,9 +2636,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "manchester-united-1997-away-kit-gigs-fivesleeeve-polo",
@@ -2729,9 +2676,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "1997",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "japan-2026-away-kit",
@@ -2758,7 +2703,7 @@ export const JERSEYS: Jersey[] =[
       "M": true,
       "L": true,
       "XL": true,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -2774,9 +2719,7 @@ export const JERSEYS: Jersey[] =[
       "Japan",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "croatia-2026-home-kit-modric",
@@ -2819,9 +2762,7 @@ export const JERSEYS: Jersey[] =[
       "Modric",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Croatia"
+    ]
   },
   {
     "id": "columbia-2026-away-kit-luis-diaz",
@@ -2864,9 +2805,7 @@ export const JERSEYS: Jersey[] =[
       "Luis Diaz",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Columbia"
+    ]
   },
   {
     "id": "argentina-2026-away-kit-alvarez",
@@ -2909,9 +2848,7 @@ export const JERSEYS: Jersey[] =[
       "Alvarez",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "netherland-2026-home-kit-de-jong",
@@ -2954,8 +2891,7 @@ export const JERSEYS: Jersey[] =[
       "De Jong",
       "Home",
       "2026"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "real-madrid-2016-17-away-kit-ronaldo-fullsleeve-embroidery",
@@ -3000,8 +2936,7 @@ export const JERSEYS: Jersey[] =[
       "2016",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "manchester-united-1998-99-home-kit-beckham-fullsleeve-polo-embroidery",
@@ -3025,8 +2960,8 @@ export const JERSEYS: Jersey[] =[
     ],
     "sizeStock": {
       "S": true,
-      "M": true,
-      "L": true,
+      "M": false,
+      "L": false,
       "XL": true,
       "XXL": false
     },
@@ -3046,8 +2981,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "england-2026-home-kit-kane-embroidery",
@@ -3092,9 +3026,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "norway-2026-home-kit-haaland-embroidery",
@@ -3139,9 +3071,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Norway"
+    ]
   },
   {
     "id": "barcelona-black-fantasy-kit-messi-fivesleeve-polo",
@@ -3183,9 +3113,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "acmilan-black-floral-special-kit-maldini-fivesleeve-polo",
@@ -3226,9 +3154,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "intermilan-2009-10-home-kit-figo-embroidery",
@@ -3271,9 +3197,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2009",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "barcelona-2016-17-home-kit-neymer-embroidery-1",
@@ -3317,9 +3241,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2016",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "germany-1998-home-kit-moller-polo-embroidery-premium",
@@ -3367,9 +3289,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "france-2026-home-kit-mbappe-polo-embroidery-premium-1",
@@ -3398,7 +3318,7 @@ export const JERSEYS: Jersey[] =[
       "L": true,
       "XL": true,
       "XXL": true,
-      "XXXL": true
+      "XXXL": false
     },
     "inStock": true,
     "images": [
@@ -3418,9 +3338,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "germany-24-25-black-kit-ozil-embroidery-premium",
@@ -3446,7 +3364,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": true,
       "M": false,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": false,
       "3XL": false
@@ -3467,9 +3385,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "manchester-united-90s-retro-inspired-kit-beckham-polo-embroidery-premium",
@@ -3516,9 +3432,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "argentina-berbitos-special-kit-messi-embroidery-premium",
@@ -3567,9 +3481,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "brazil-2004-home-kit-ronaldinho-embroidery-premium",
@@ -3616,9 +3528,7 @@ export const JERSEYS: Jersey[] =[
       "2004",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "brazil-2026-home-kit-neymer-embroidery-premium",
@@ -3642,12 +3552,12 @@ export const JERSEYS: Jersey[] =[
       "3XL"
     ],
     "sizeStock": {
-      "S": false,
+      "S": true,
       "M": false,
-      "L": true,
+      "L": false,
       "XL": false,
-      "XXL": false,
-      "3XL": false
+      "XXL": true,
+      "3XL": true
     },
     "inStock": true,
     "images": [
@@ -3666,9 +3576,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "argentina-2026-away-kit-depaul",
@@ -3711,9 +3619,7 @@ export const JERSEYS: Jersey[] =[
       "De Paul",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "manchester-united-1998-white-kit-beckham-embroidery",
@@ -3756,9 +3662,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "1998",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "england-2026-away-kit-bellingham-embroidery",
@@ -3803,9 +3707,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "spain-2026-home-kit-lamine-yamal",
@@ -3848,9 +3750,7 @@ export const JERSEYS: Jersey[] =[
       "Lamine Yamal",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "barcelona-2014-15-home-kit-neymer-fivesleeve-polo",
@@ -3892,9 +3792,7 @@ export const JERSEYS: Jersey[] =[
       "2014",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "real-madrid-black-concept-kit-ronaldo-fivesleeve-polo",
@@ -3936,9 +3834,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "germany-2026-black-concept-kit-musiala-fivesleeve-polo",
@@ -3981,9 +3877,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "norway-2026-away-kit-haaland",
@@ -4008,8 +3902,8 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": true,
       "M": true,
-      "L": true,
-      "XL": true,
+      "L": false,
+      "XL": false,
       "XXL": true
     },
     "inStock": true,
@@ -4026,9 +3920,7 @@ export const JERSEYS: Jersey[] =[
       "Haaland",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Norway"
+    ]
   },
   {
     "id": "england-2026-away-kit-belingham-1",
@@ -4071,9 +3963,7 @@ export const JERSEYS: Jersey[] =[
       "Belingham",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "spain-2026-away-kit-rodrigo",
@@ -4098,7 +3988,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": false,
       "M": false,
-      "L": true,
+      "L": false,
       "XL": true,
       "XXL": false
     },
@@ -4116,9 +4006,7 @@ export const JERSEYS: Jersey[] =[
       "Rodrigo",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "mumbai-indians-2026-kit-rohit-polo-embroidery-premium",
@@ -4144,7 +4032,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": true,
       "L": true,
-      "XL": false,
+      "XL": true,
       "XXL": true
     },
     "inStock": true,
@@ -4163,9 +4051,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Mumbai"
+    ]
   },
   {
     "id": "mumbai-indians-2026-kit-rohit-polo-premium",
@@ -4212,9 +4098,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Mumbai"
+    ]
   },
   {
     "id": "spain-2026-away-kit-pedri-embroidery-premium",
@@ -4263,9 +4147,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "intermilan-1998-99-third-kit-zanetti-polo-embroidery-premium-1",
@@ -4309,9 +4191,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "intermilan-1998-99-third-kit-zanetti-polo-embroidery-premium",
@@ -4338,7 +4218,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": true,
       "L": false,
-      "XL": true,
+      "XL": false,
       "XXL": true,
       "XXXL": false
     },
@@ -4358,9 +4238,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "newcastle-1995-96-away-kit-ginola-fivesleeve-polo-embroidery-premium",
@@ -4404,9 +4282,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Newcastle"
+    ]
   },
   {
     "id": "ateltico-madrid-1998-99-away-kit-torres-fivesleeve-polo-embroidery-premium",
@@ -4451,9 +4327,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Ateltico"
+    ]
   },
   {
     "id": "argentina-2026-home-kit-messi-1",
@@ -4496,9 +4370,7 @@ export const JERSEYS: Jersey[] =[
       "Messi",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "france-2026-away-kit-olise",
@@ -4541,9 +4413,7 @@ export const JERSEYS: Jersey[] =[
       "Olise",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "argentina-2026-away-kit-messi-embroidery-premium",
@@ -4567,12 +4437,12 @@ export const JERSEYS: Jersey[] =[
       "XXXL"
     ],
     "sizeStock": {
-      "S": true,
-      "M": true,
+      "S": false,
+      "M": false,
       "L": false,
       "XL": true,
       "XXL": true,
-      "XXXL": true
+      "XXXL": false
     },
     "inStock": true,
     "images": [
@@ -4592,9 +4462,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "portugal-2026-away-kit-ronaldo-embroidery-premium-1",
@@ -4619,11 +4487,11 @@ export const JERSEYS: Jersey[] =[
     ],
     "sizeStock": {
       "S": true,
-      "M": false,
-      "L": false,
-      "XL": false,
-      "XXL": false,
-      "3XL": false
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "3XL": true
     },
     "inStock": true,
     "images": [
@@ -4643,9 +4511,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "portugal-2026-home-kit-ronaldo-embroidery-premium-3",
@@ -4665,14 +4531,16 @@ export const JERSEYS: Jersey[] =[
       "M",
       "L",
       "XL",
-      "XXL"
+      "XXL",
+      "XXXL"
     ],
     "sizeStock": {
       "S": true,
       "M": true,
       "L": true,
       "XL": true,
-      "XXL": true
+      "XXL": true,
+      "XXXL": true
     },
     "inStock": true,
     "images": [
@@ -4691,9 +4559,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "brazil-2026-home-kit-neymer-1",
@@ -4736,9 +4602,7 @@ export const JERSEYS: Jersey[] =[
       "Neymer",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "intermilan-2010-11-away-kit-zanetti-fivesleeve",
@@ -4778,9 +4642,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2010",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "real-madrid-2010-11-home-kit-marcelo-fivesleeve",
@@ -4820,9 +4682,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2010",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "spain-2010-home-kit-ramos-fivesleeve",
@@ -4863,9 +4723,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2010",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "barcelona-1992-vintage-special-kit-ronaldinho-fivesleeve-polo-1",
@@ -4906,9 +4764,7 @@ export const JERSEYS: Jersey[] =[
       "1992",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "boca-juniors-96-97-away-kit-maradona-fivesleeve-polo-1",
@@ -4949,8 +4805,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "italy-2016-17-away-kit-pirlo-fivesleeve-polo-1",
@@ -4992,9 +4847,7 @@ export const JERSEYS: Jersey[] =[
       "2016",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Italy"
+    ]
   },
   {
     "id": "manchester-united-1998-white-kit-beckham-fivesleeve-polo",
@@ -5035,9 +4888,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "japan-2026-away-kit-minamino",
@@ -5064,9 +4915,9 @@ export const JERSEYS: Jersey[] =[
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T221228.211.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -5080,9 +4931,7 @@ export const JERSEYS: Jersey[] =[
       "Minamino",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-raphina",
@@ -5125,9 +4974,7 @@ export const JERSEYS: Jersey[] =[
       "Raphina",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-neymer-1",
@@ -5168,9 +5015,7 @@ export const JERSEYS: Jersey[] =[
       "Neymer",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "spain-2026-away-kit-pedri",
@@ -5213,9 +5058,7 @@ export const JERSEYS: Jersey[] =[
       "Pedri",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "argentina-1994-away-kit-messi-fivesleeve-polo-1",
@@ -5258,9 +5101,7 @@ export const JERSEYS: Jersey[] =[
       "1994",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "liverpool-1996-97-away-kit-owen-fivesleeve-polo",
@@ -5301,9 +5142,7 @@ export const JERSEYS: Jersey[] =[
       "1996",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "france-2026-away-kit-dembele-1",
@@ -5346,9 +5185,7 @@ export const JERSEYS: Jersey[] =[
       "Dembele",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "england-2026-away-kit-saka",
@@ -5391,9 +5228,7 @@ export const JERSEYS: Jersey[] =[
       "Saka",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "brazil-2026-away-gk-kit-a-becker",
@@ -5437,9 +5272,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Goalkeeper"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "netherlands-2026-away-kit-de-jong",
@@ -5482,9 +5315,7 @@ export const JERSEYS: Jersey[] =[
       "De Jong",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Netherlands"
+    ]
   },
   {
     "id": "uruguay-2026-home-kit-valverde",
@@ -5527,9 +5358,7 @@ export const JERSEYS: Jersey[] =[
       "Valverde",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Uruguay"
+    ]
   },
   {
     "id": "croatia-2026-away-kit-modric",
@@ -5572,9 +5401,7 @@ export const JERSEYS: Jersey[] =[
       "Modric",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Croatia"
+    ]
   },
   {
     "id": "france-2026-away-kit-dembele",
@@ -5617,9 +5444,7 @@ export const JERSEYS: Jersey[] =[
       "Mbappe",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "norway-2026-home-kit-odegaard",
@@ -5662,9 +5487,7 @@ export const JERSEYS: Jersey[] =[
       "Odegaard",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Norway"
+    ]
   },
   {
     "id": "france-2026-home-kit-doue-polo",
@@ -5708,9 +5531,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "sporting-2001-02-home-kit-ronaldo-embroidery-premium-1",
@@ -5755,9 +5576,7 @@ export const JERSEYS: Jersey[] =[
       "2001",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Sporting"
+    ]
   },
   {
     "id": "santos-2012-13-away-kit-neymer-embroidery-premium",
@@ -5802,9 +5621,7 @@ export const JERSEYS: Jersey[] =[
       "2012",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-neymer-embroidery-premium-1",
@@ -5852,9 +5669,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "france-2006-07-home-kit-zidane-embroidery-premium",
@@ -5900,9 +5715,7 @@ export const JERSEYS: Jersey[] =[
       "2006",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "england-1998-home-kit-beckham-fullsleeve-polo-embroidery-premium",
@@ -5949,8 +5762,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "england-1996-home-beckham-polo-embroidery-premium",
@@ -5996,9 +5808,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "manchester-united-2000-01-third-kit-beckham-polo-embroidery-premium",
@@ -6043,9 +5853,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "rcb-2026-green-kit-virat-polo-premium",
@@ -6092,9 +5900,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Rcb"
+    ]
   },
   {
     "id": "liverpool-2006-07-home-kit-gerrard-polo-embroidery-premium",
@@ -6137,9 +5943,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "argentina-2001-testimonial-jersey-maradona-polo-embroidery-premium",
@@ -6167,7 +5971,7 @@ export const JERSEYS: Jersey[] =[
       "M": true,
       "L": true,
       "XL": true,
-      "XXL": true,
+      "XXL": false,
       "XXXL": false
     },
     "inStock": true,
@@ -6187,9 +5991,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "chelsea-2006-07-third-kit-ballack-polo-embroidery-premium",
@@ -6236,9 +6038,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Chelsea"
+    ]
   },
   {
     "id": "juventus-2008-09-home-kit-embroidery-premium",
@@ -6281,9 +6081,7 @@ export const JERSEYS: Jersey[] =[
       "2008",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Juventus"
+    ]
   },
   {
     "id": "france-1998-home-kit-zidane-polo-embroidery-1",
@@ -6328,9 +6126,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "acmilan-1993-94-home-kit-maldini-polo-embroidery",
@@ -6374,9 +6170,7 @@ export const JERSEYS: Jersey[] =[
       "1993",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "manchester-united-2003-04-third-kit-ronaldo-polo-embroidery-1",
@@ -6421,9 +6215,7 @@ export const JERSEYS: Jersey[] =[
       "2003",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "argentina-dragon-special-edition-kit-messi-embroidery",
@@ -6468,9 +6260,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "germany-national-team-concept-edition-home-kit-kroos-embroidery",
@@ -6514,9 +6304,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "real-madrid-2017-18-third-kit-ronaldo-embroidery-1",
@@ -6560,9 +6348,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2017",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-2006-home-ronaldo-embroidery",
@@ -6606,9 +6392,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2006",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "england-2026-home-kit-belingham-embroidery",
@@ -6653,9 +6437,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "manchester-united-2007-08-away-kit-ronaldo-fullsleeve-embroidery-1",
@@ -6700,8 +6482,7 @@ export const JERSEYS: Jersey[] =[
       "2007",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "real-madrid-2017-18-third-kit-ronaldo-fullsleeve-embroidery-1",
@@ -6746,8 +6527,7 @@ export const JERSEYS: Jersey[] =[
       "2017",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "liverpool-2007-08-away-kit-torres-fullsleeve-embroidery",
@@ -6791,8 +6571,7 @@ export const JERSEYS: Jersey[] =[
       "2007",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "rcb-2026-kit-virat-fullsleeve-polo-embroidery",
@@ -6838,8 +6617,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "india-cricket-test-jersey-polo-embroidery-premium",
@@ -6887,9 +6665,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "India"
+    ]
   },
   {
     "id": "acmilan-2006-07-away-kit-maldini-fullsleeve-embroidery-premium",
@@ -6916,7 +6692,7 @@ export const JERSEYS: Jersey[] =[
       "M": false,
       "L": false,
       "XL": true,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -6934,8 +6710,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "barcelona-2008-09-messi-home-kit-embroidery-premium",
@@ -6980,9 +6755,7 @@ export const JERSEYS: Jersey[] =[
       "2008",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "acmilan-2006-07-third-kit-maldini-embroidery-premium",
@@ -7026,9 +6799,7 @@ export const JERSEYS: Jersey[] =[
       "2006",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "los-angles-lakers-lebron-james-sleeveless-premium",
@@ -7070,8 +6841,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Premium"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "germany-1998-home-kit-bierhoff-fivesleeve",
@@ -7112,9 +6882,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "1998",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "argentina-1994-home-kit-batistuta-fivesleeve-polo",
@@ -7156,9 +6924,7 @@ export const JERSEYS: Jersey[] =[
       "1994",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "real-madrid-25-26-third-kit-mbappe-embroidery-premium-1",
@@ -7186,7 +6952,7 @@ export const JERSEYS: Jersey[] =[
       "M": true,
       "L": true,
       "XL": true,
-      "XXL": true,
+      "XXL": false,
       "XXXL": true
     },
     "inStock": true,
@@ -7205,9 +6971,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "argentina-2026-away-kit-messi",
@@ -7231,10 +6995,10 @@ export const JERSEYS: Jersey[] =[
     ],
     "sizeStock": {
       "S": false,
-      "M": true,
-      "L": true,
+      "M": false,
+      "L": false,
       "XL": true,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -7250,9 +7014,7 @@ export const JERSEYS: Jersey[] =[
       "Messi",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "portugal-2026-away-kit-ronaldo",
@@ -7277,7 +7039,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": true,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": true,
       "XXL": false
     },
@@ -7295,9 +7057,7 @@ export const JERSEYS: Jersey[] =[
       "Ronaldo",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "england-2026-away-kit-belingham",
@@ -7340,9 +7100,7 @@ export const JERSEYS: Jersey[] =[
       "Belingham",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "jacket-manchester-united-navy-blue-1",
@@ -7380,8 +7138,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Jackets"
+    ]
   },
   {
     "id": "jacket-manchester-united-navy-blue",
@@ -7419,8 +7176,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Jackets"
+    ]
   },
   {
     "id": "jacket-manchester-united-black",
@@ -7458,8 +7214,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Jackets"
+    ]
   },
   {
     "id": "jacket-real-madrid-red",
@@ -7497,8 +7252,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Jackets"
+    ]
   },
   {
     "id": "jacket-real-madrid-navy-blue",
@@ -7536,8 +7290,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Jackets"
+    ]
   },
   {
     "id": "jacket-real-madrid-black",
@@ -7575,8 +7328,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Jackets"
+    ]
   },
   {
     "id": "mumbai-indians-2026-kit-hardik-polo-embroidery-premium",
@@ -7624,9 +7376,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Mumbai"
+    ]
   },
   {
     "id": "ajax-1997-98-away-kit-cruyff-polo-embroidery-premium",
@@ -7673,9 +7423,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Ajax"
+    ]
   },
   {
     "id": "real-madrid-2006-07-away-kit-beckham-fullsleeve-polo-embroidery-premium",
@@ -7720,8 +7468,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "france-2026-home-kit-mbappe-polo-1",
@@ -7765,9 +7512,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "argentina-2006-away-kit-messi-embroidery-premium",
@@ -7813,9 +7558,7 @@ export const JERSEYS: Jersey[] =[
       "2006",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "chennai-super-kings-2026-kit-dhoni-polo-embroidery-premium",
@@ -7863,9 +7606,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Chennai"
+    ]
   },
   {
     "id": "manchester-united-2007-08-home-kit-ronaldo-embroidery-premium",
@@ -7910,9 +7651,7 @@ export const JERSEYS: Jersey[] =[
       "2007",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "juventus-2005-06-home-kit-embroidery-premium",
@@ -7954,9 +7693,7 @@ export const JERSEYS: Jersey[] =[
       "2005",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Juventus"
+    ]
   },
   {
     "id": "liverpool-2007-08-away-kit-torres-fivesleeve-embroidery-premium",
@@ -7999,9 +7736,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "rcb-2026-home-kit-virat-polo-embroidery-premium",
@@ -8050,9 +7785,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Rcb"
+    ]
   },
   {
     "id": "arsanel-25-26-third-kit-fullsleeve-polo-embroidery-premium",
@@ -8075,13 +7808,13 @@ export const JERSEYS: Jersey[] =[
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": false,
       "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-30T165025.188.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -8099,8 +7832,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-vini",
@@ -8143,9 +7875,7 @@ export const JERSEYS: Jersey[] =[
       "Vini",
       "Away",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "japan-2016-away-kit-embroidery-1",
@@ -8189,9 +7919,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2016",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "barcelona-2008-09-home-kit-messi-fullsleeve-embroidery-1",
@@ -8236,8 +7964,7 @@ export const JERSEYS: Jersey[] =[
       "2008",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "brazil-2019-away-kit-neymer-embroidery-1",
@@ -8282,9 +8009,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2019",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "argentina-2026-training-kit-messi-embroidery-1",
@@ -8330,9 +8055,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Training"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "arsanel-x-stussy-special-edition-kit-ozil-embroidery-premium",
@@ -8379,9 +8102,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "liverpool-1993-94-home-kit-torres-polo-embroidery-premium",
@@ -8426,9 +8147,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "mumbai-indians-2026-home-kit-rohit-polo-embroidey",
@@ -8471,9 +8190,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Mumbai"
+    ]
   },
   {
     "id": "juventus-1995-96-home-kit-del-piero-polo-embroidery-premium",
@@ -8521,9 +8238,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Juventus"
+    ]
   },
   {
     "id": "italy-1996-97-training-kit-maldini-fivesleeve-embroidery-premium",
@@ -8570,9 +8285,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Training",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Italy"
+    ]
   },
   {
     "id": "chennai-super-kings-2026-kit-dhoni-polo-premium",
@@ -8618,9 +8331,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Chennai"
+    ]
   },
   {
     "id": "chennai-super-kings-2026-kit-sams0n-polo-premium",
@@ -8666,9 +8377,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Chennai"
+    ]
   },
   {
     "id": "barcelona-125th-anniversary-kit-neymer-fivesleeve-polo-embroidery-premium",
@@ -8715,9 +8424,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "spain-2026-home-kit-lamine-yamal-embroidery-premium",
@@ -8766,9 +8473,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "rcb-2026-home-kit-virat-polo-embroidery",
@@ -8809,9 +8514,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Rcb"
+    ]
   },
   {
     "id": "intermilan-1996-97-away-kit-zanetti-fivesleeve-polo-embroidery-premium",
@@ -8855,9 +8558,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "newcastle-1999-2000-away-kit-shearer-fivesleeve-polo-embroidery-premium",
@@ -8904,9 +8605,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Newcastle"
+    ]
   },
   {
     "id": "acmilan-2011-12-third-kit-ibrahimovic-polo-embroidery-premium",
@@ -8951,9 +8650,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "japan-x-stussy-1998-home-kit-nakata-fivesleeve-polo-embroidery-premium",
@@ -9001,9 +8698,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "acmilan-2009-10-home-kit-maldini-polo-embroidery-premium",
@@ -9050,9 +8745,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "real-madrid-golden-lion-special-edition-kit-embroidery-premium",
@@ -9098,9 +8791,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "olympique-lyonnais-2007-08-third-kit-juninho-embroidery-premium",
@@ -9144,8 +8835,7 @@ export const JERSEYS: Jersey[] =[
       "2007",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "shorts-dotknit-black-embroidery",
@@ -9184,8 +8874,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "shorts-dotknit-white-embroidery",
@@ -9224,8 +8913,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "brazil-1998-home-kit-ronaldo-embroidery-premium",
@@ -9250,7 +8938,7 @@ export const JERSEYS: Jersey[] =[
     ],
     "sizeStock": {
       "S": false,
-      "M": true,
+      "M": false,
       "L": true,
       "XL": true,
       "XXL": false,
@@ -9274,9 +8962,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "mexico-2026-home-kit-embroidery-premium-1",
@@ -9303,7 +8989,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": true,
       "L": true,
-      "XL": true,
+      "XL": false,
       "XXL": true,
       "XXXL": false
     },
@@ -9324,9 +9010,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Mexico"
+    ]
   },
   {
     "id": "barcelona-2014-15-home-kit-messi-embroidery-premium",
@@ -9352,7 +9036,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": true,
       "XXXL": false
@@ -9373,9 +9057,7 @@ export const JERSEYS: Jersey[] =[
       "2014",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "germany-1996-home-kit-beckenbauer-polo-embroidery-premium",
@@ -9424,9 +9106,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "italy-2014-away-kit-pirlo-embroidery-premium",
@@ -9473,9 +9153,7 @@ export const JERSEYS: Jersey[] =[
       "2014",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Italy"
+    ]
   },
   {
     "id": "fiorentina-1992-93-away-kit-batistuta-fivesleeve-polo-embroidery-premium",
@@ -9519,9 +9197,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Fiorentina"
+    ]
   },
   {
     "id": "liverpool-2000-01-home-kit-owen-polo-embroidery-premium",
@@ -9545,7 +9221,7 @@ export const JERSEYS: Jersey[] =[
       "XXXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": false,
       "XL": false,
@@ -9568,9 +9244,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "acmilan-1999-2000-home-kit-maldini-polo-embroidery",
@@ -9612,9 +9286,7 @@ export const JERSEYS: Jersey[] =[
       "1999",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "germany-2026-training-kit-embroidery",
@@ -9638,7 +9310,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "S": true,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false
     },
     "inStock": true,
@@ -9657,9 +9329,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Training"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "portugal-2010-away-kit-ronaldo-embroidery",
@@ -9704,9 +9374,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2010",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "manchester-united-2007-08-home-kit-ronaldo-embroidery-1",
@@ -9750,9 +9418,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2007",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "real-madrid-2019-20-home-kit-modric-embroidery",
@@ -9796,9 +9462,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2019",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "tshirt-fullsleeve-emirates-r-w",
@@ -9840,8 +9504,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "T-Shirt",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "tshirt-fullsleeve-emirates-g-w-r",
@@ -9883,8 +9546,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "T-Shirt",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "tshirt-fullsleeve-emirates-b-g-r",
@@ -9926,8 +9588,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "T-Shirt",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "roma-1999-2000-home-kit-totti-fivesleeve-polo-embroidery-premium",
@@ -9949,7 +9610,7 @@ export const JERSEYS: Jersey[] =[
       "XL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": true,
       "XL": false
@@ -9971,9 +9632,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Roma"
+    ]
   },
   {
     "id": "intermilan-2014-15-home-kit-icardi-polo-embroidery-premium",
@@ -10020,9 +9679,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "argentina-2026-home-kit-messi-embroidery-premium-1",
@@ -10072,9 +9729,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "bayern-2013-14-third-kit-kroos-embroidery-premium",
@@ -10118,9 +9773,7 @@ export const JERSEYS: Jersey[] =[
       "2013",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Bayern"
+    ]
   },
   {
     "id": "barcelona-2003-04-away-kit-ronaldinho-polo-embroidery-premium",
@@ -10166,9 +9819,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "india-26-27-t20-kit-embroidery-premium",
@@ -10215,9 +9866,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "India"
+    ]
   },
   {
     "id": "real-madrid-starlight-special-edition-kit-ronaldo-polo-embroidery-premium",
@@ -10265,9 +9914,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "liverpool-terrace-icon-kit-fivesleeve-embroidery-premium",
@@ -10312,9 +9959,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "bayern-1998-99-away-kit-matthaus-fivesleeve-polo",
@@ -10357,9 +10002,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Bayern"
+    ]
   },
   {
     "id": "manchester-united-1998-away-kit-beckham-polo-embroidery-premium",
@@ -10404,9 +10047,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "spain-1996-home-kit-luis-enrique-fivesleeve-polo-embroidery-premium",
@@ -10451,9 +10092,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "acmilan-1995-96-home-kit-baggio-fivesleeve-polo-embroidery",
@@ -10498,9 +10137,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1993-94-home-kit-gullit-fivesleeve",
@@ -10543,9 +10180,7 @@ export const JERSEYS: Jersey[] =[
       "1993",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "india-1999-world-cup-kit-tendulkar-polo-embroidery-premium",
@@ -10593,9 +10228,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "India"
+    ]
   },
   {
     "id": "germany-2008-09-away-kit-ballack-fivesleeve-embroidery-premium",
@@ -10641,9 +10274,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "sporting-2001-02-home-kit-ronaldo-fivesleeve-embroidery-premium",
@@ -10687,9 +10318,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Sporting"
+    ]
   },
   {
     "id": "barcelona-x-coldplay-special-edition-kit-raphina-embroidery-premium",
@@ -10734,9 +10363,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "brazil-x-stussy-2002-home-kit-ronaldo-embroidery-premium",
@@ -10784,9 +10411,7 @@ export const JERSEYS: Jersey[] =[
       "2002",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "barcelona-2004-05-away-kit-messi-fivesleeve-embroidery",
@@ -10831,9 +10456,7 @@ export const JERSEYS: Jersey[] =[
       "2004",
       "Embroidery",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-1999-2000-home-kit-puyol-polo-embroidery-premium",
@@ -10880,9 +10503,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "arsanel-2017-18-home-kit-ozil-polo-embroidery-premium-1",
@@ -10905,7 +10526,7 @@ export const JERSEYS: Jersey[] =[
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": false,
       "XL": false,
@@ -10927,9 +10548,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "germany-2006-home-kit-kroos-embroidery-premium-1",
@@ -10976,9 +10595,7 @@ export const JERSEYS: Jersey[] =[
       "2006",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "santos-2012-13-home-kit-neymer-embroidery-premium-1",
@@ -11023,9 +10640,7 @@ export const JERSEYS: Jersey[] =[
       "2012",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "england-2004-05-away-kit-beckham-embroidery-premium",
@@ -11072,9 +10687,7 @@ export const JERSEYS: Jersey[] =[
       "2004",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "brazil-2026-away-kit-neymer-embroidery-1",
@@ -11119,9 +10732,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "arsanel-2022-23-home-kit-odegaard-polo-embroidery",
@@ -11166,9 +10777,7 @@ export const JERSEYS: Jersey[] =[
       "2022",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "manchester-united-fantasy-kit-beckham-fivesleeve-polo",
@@ -11209,9 +10818,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "argentina-la-albiceleste-10-black-kit-fivesleeve-polo-embroidery-premium",
@@ -11257,9 +10864,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "intermilan-1997-98-home-kit-ronaldo-polo-embroidery-premium",
@@ -11305,9 +10910,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "arsanel-2005-06-home-kit-henry-polo-embroidery-premium",
@@ -11352,9 +10955,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "liverpool-1989-90-home-kit-embroidery-premium",
@@ -11400,9 +11001,7 @@ export const JERSEYS: Jersey[] =[
       "1989",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "portugal-2026-home-kit-ronaldo-embroidery-with-shorts",
@@ -11425,13 +11024,13 @@ export const JERSEYS: Jersey[] =[
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
-      "M": true,
+      "S": false,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-02T182738.750.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -11450,8 +11049,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "real-madrid-2017-18-third-kit-ronaldo-fullsleeve-embroidery-premium",
@@ -11497,8 +11095,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "real-madrid-2016-17-home-kit-ronaldo-polo-embroidery-premium",
@@ -11546,9 +11143,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-2011-12-home-kit-ronaldo-polo-embroidery-premium",
@@ -11596,9 +11191,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "roma-25-26-third-kit-dybala-polo-embroidery-premium",
@@ -11646,9 +11239,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Roma"
+    ]
   },
   {
     "id": "barcelona-2014-15-third-kit-messi-polo-embroidery-premium",
@@ -11694,9 +11285,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "arsanel-1990-91-home-kit-adams-fivesleeve-knitted-polo-embroidery-premium",
@@ -11718,7 +11307,7 @@ export const JERSEYS: Jersey[] =[
       "XL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": false,
       "XL": false
@@ -11740,9 +11329,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "mexico-gold-cup-edition-kit-embroidery-premium",
@@ -11787,9 +11374,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Mexico"
+    ]
   },
   {
     "id": "juventus-2015-16-home-kit-pogba-embroidery",
@@ -11832,9 +11417,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2015",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Juventus"
+    ]
   },
   {
     "id": "valencia-2006-away-kit-david-villa-embroiery",
@@ -11868,9 +11451,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Away",
       "2006"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Valencia"
+    ]
   },
   {
     "id": "united-2007-08-away-kit-ronaldo-with-shorts",
@@ -11914,8 +11495,7 @@ export const JERSEYS: Jersey[] =[
       "Ronaldo",
       "Away",
       "2007"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "sporting-2000-01-home-kit-ronaldo",
@@ -11942,7 +11522,7 @@ export const JERSEYS: Jersey[] =[
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -11957,9 +11537,7 @@ export const JERSEYS: Jersey[] =[
       "Ronaldo",
       "Home",
       "2000"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Sporting"
+    ]
   },
   {
     "id": "spain-2016-17-away-kit-iniesta-embroidery",
@@ -11997,9 +11575,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2016",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Spain"
+    ]
   },
   {
     "id": "shorts-pp-white-2",
@@ -12039,8 +11615,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "shorts-pp-black-2",
@@ -12081,8 +11656,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Shorts"
+    ]
   },
   {
     "id": "sao-paulo-2001-home-kit-kaka-fivesleeve",
@@ -12122,9 +11696,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2001",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Sao"
+    ]
   },
   {
     "id": "santos-x-charlie-brown-jr-1992-white-special-edition-kit-neymer-polo-embroidery-premium",
@@ -12164,9 +11736,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "santos-25-26-blue-dragon-special-edition-kit-neymer-embroidery",
@@ -12204,9 +11774,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "santos-2012-13-home-kit-neymer-fivesleeve-2",
@@ -12241,9 +11809,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2012",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "santos-2012-13-home-kit-neymer-embroidery-2",
@@ -12281,9 +11847,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2012",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "santos-2012-black-kit-neymer-embroidery",
@@ -12325,9 +11889,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2012",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "santos-2011-12-home-kit-neymer-fivesleeve-embroidery",
@@ -12364,9 +11926,7 @@ export const JERSEYS: Jersey[] =[
       "2011",
       "Embroidery",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Santos"
+    ]
   },
   {
     "id": "roma-25-26-third-kit-dybala-polo",
@@ -12400,9 +11960,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Roma"
+    ]
   },
   {
     "id": "roma-20-21-third-kit-totti-fivesleeve",
@@ -12440,9 +11998,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Roma"
+    ]
   },
   {
     "id": "roma-1999-2000-home-kit-cafu-fivesleeve-polo",
@@ -12483,9 +12039,7 @@ export const JERSEYS: Jersey[] =[
       "1999",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Roma"
+    ]
   },
   {
     "id": "roma-1997-98-away-kit-totti-fivesleeve-polo-2",
@@ -12508,7 +12062,7 @@ export const JERSEYS: Jersey[] =[
     "sizeStock": {
       "XL": false,
       "L": true,
-      "M": true
+      "M": false
     },
     "inStock": true,
     "images": [
@@ -12524,9 +12078,7 @@ export const JERSEYS: Jersey[] =[
       "1997",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Roma"
+    ]
   },
   {
     "id": "real-madrid-fivesleeve-white",
@@ -12560,9 +12112,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-champions-edition-kit-fivesleeve",
@@ -12602,9 +12152,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-25-26-third-kit-huijsen",
@@ -12637,9 +12185,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Third",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-25-26-away-kit-trent-embroidery-premium",
@@ -12679,9 +12225,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-2025-26-away-kit-vini-jr",
@@ -12715,9 +12259,7 @@ export const JERSEYS: Jersey[] =[
       "Vini",
       "Away",
       "2025"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-2017-18-third-kit-ramos",
@@ -12750,9 +12292,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Third",
       "2017"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-2009-10-home-kit-marcelo-fivesleeve",
@@ -12772,7 +12312,7 @@ export const JERSEYS: Jersey[] =[
       "XL"
     ],
     "sizeStock": {
-      "XXL": true,
+      "XXL": false,
       "XL": true
     },
     "inStock": true,
@@ -12788,9 +12328,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2009",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-1999-2000-home-kit-carlos-polo-embroidery-premium",
@@ -12837,9 +12375,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "real-madrid-1999-2000-away-kit-fivesleeve-polo",
@@ -12876,9 +12412,7 @@ export const JERSEYS: Jersey[] =[
       "1999",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Real"
+    ]
   },
   {
     "id": "rajasthan-royals-2025-kit-sanju-samson-polo",
@@ -12916,9 +12450,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2025",
       "Polo"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Rajasthan"
+    ]
   },
   {
     "id": "psg-25-26-third-kit-marquinhos",
@@ -12957,9 +12489,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Third",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Psg"
+    ]
   },
   {
     "id": "psg-25-26-third-kit-dembele",
@@ -12997,9 +12527,7 @@ export const JERSEYS: Jersey[] =[
       "Dembele",
       "Third",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Psg"
+    ]
   },
   {
     "id": "psg-2025-champions-special-kit",
@@ -13036,9 +12564,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2025"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Psg"
+    ]
   },
   {
     "id": "portugal-vintage-jersey-fivesleeve-polo-premium",
@@ -13083,9 +12609,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "portugal-25-26-black-kit-ronaldo-polo-embroidery-premium",
@@ -13134,9 +12658,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Portugal"
+    ]
   },
   {
     "id": "portugal-2026-black-kit-ronaldo-fullsleeve-polo-embroidery-premium-2",
@@ -13184,8 +12706,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "pepsi-football-kit-ronaldinho-embroidery",
@@ -13226,9 +12747,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Pepsi"
+    ]
   },
   {
     "id": "parma-calcio-2001-02-third-kit-adriano-fivesleeve-polo",
@@ -13263,9 +12782,7 @@ export const JERSEYS: Jersey[] =[
       "2001",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Parma"
+    ]
   },
   {
     "id": "parma-97-98-gk-kit-buffon",
@@ -13305,9 +12822,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Goalkeeper"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Parma"
+    ]
   },
   {
     "id": "parma-2003-04-home-kit-crespo-fivesleeve-polo",
@@ -13348,9 +12863,7 @@ export const JERSEYS: Jersey[] =[
       "2003",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Parma"
+    ]
   },
   {
     "id": "nfl-rrr-99-fivesleeve",
@@ -13386,8 +12899,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "nfl-lwmoney-fivesleeve-blue",
@@ -13425,8 +12937,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "nfl-99-blue-fivesleeve",
@@ -13462,8 +12973,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "neymer-all-team-tribute-jersey",
@@ -13497,8 +13007,7 @@ export const JERSEYS: Jersey[] =[
       "Neymer",
       "Home",
       "2026"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "monaco-1999-2000-home-kit-henry-fivesleeve-polo",
@@ -13535,9 +13044,7 @@ export const JERSEYS: Jersey[] =[
       "1999",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Monaco"
+    ]
   },
   {
     "id": "monaco-1997-98-home-kit-henry-fivesleeve",
@@ -13575,9 +13082,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "1997",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Monaco"
+    ]
   },
   {
     "id": "manchester-united-2014-15-training-kit-embroidery",
@@ -13613,9 +13118,7 @@ export const JERSEYS: Jersey[] =[
       "2014",
       "Embroidery",
       "Training"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "manchester-united-2011-12-giggs-embroidery",
@@ -13650,9 +13153,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2011",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "manchester-united-2007-08-home-kit-ronaldo-embroidery",
@@ -13690,9 +13191,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2007",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "manchester-united-2002-03-away-kit-beckham-embroidery",
@@ -13727,9 +13226,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2002",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "manchester-united-1998-99-home-kit-beckham-polo-embroidery-premium",
@@ -13775,9 +13272,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "manchester-city-2020-21-third-kit-embroidery",
@@ -13816,9 +13311,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2020",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Manchester"
+    ]
   },
   {
     "id": "columbia-1990-kit-valderamma-fivesleeve",
@@ -13852,8 +13345,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Five Sleeve"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "liverpool-25-26-away-kit-wirtz",
@@ -13887,9 +13379,7 @@ export const JERSEYS: Jersey[] =[
       "Wirtz",
       "Away",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2013-14-third-kit-coutinho-embroidery-premium",
@@ -13935,9 +13425,7 @@ export const JERSEYS: Jersey[] =[
       "2013",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2013-14-away-kit-gerrard-embroidery-premium",
@@ -13982,9 +13470,7 @@ export const JERSEYS: Jersey[] =[
       "2013",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2011-12-away-kit-torres-fivesleeve",
@@ -14018,9 +13504,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2011",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2008-09-third-kit-torres-polo-embroidery",
@@ -14056,9 +13540,7 @@ export const JERSEYS: Jersey[] =[
       "2008",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2005-06-away-kit-gerrard-embroidery",
@@ -14101,9 +13583,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2005",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2003-04-away-kit-gerrard-embroidery",
@@ -14146,9 +13626,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2003",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-2002-03-away-kit-owen-embroidery",
@@ -14185,9 +13663,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2002",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-1997-98-away-kit-owen-fivesleeve",
@@ -14227,9 +13703,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "1997",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-1995-96-away-kit-fowler-polo-embroidery-premium",
@@ -14274,9 +13748,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "liverpool-1993-94-home-kit-fowler-embroidery",
@@ -14315,9 +13787,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "1993",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Liverpool"
+    ]
   },
   {
     "id": "lazio-2000-01-away-kit-crespo-fivesleeve",
@@ -14351,9 +13821,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2000",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Lazio"
+    ]
   },
   {
     "id": "kolkata-knight-riders-2025-kit-ajinkya",
@@ -14390,9 +13858,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2025"
-    ],
-    "mainCategory": "IPL",
-    "subCategory": "Kolkata"
+    ]
   },
   {
     "id": "kerala-blasters-25-26-away-kit-a-luna-polo",
@@ -14428,8 +13894,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "japan-anime-special-kit-tokyo-ghoul-embroidery",
@@ -14473,9 +13938,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "japan-2026-home-kit",
@@ -14517,9 +13980,7 @@ export const JERSEYS: Jersey[] =[
       "Japan",
       "Home",
       "2026"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Japan"
+    ]
   },
   {
     "id": "italy-1996-away-kit-maldini-fivesleeve-polo-embroidery-premium",
@@ -14564,9 +14025,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Italy"
+    ]
   },
   {
     "id": "italy-1995-away-kit-baggio-fivesleeve-polo",
@@ -14606,9 +14065,7 @@ export const JERSEYS: Jersey[] =[
       "1995",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Italy"
+    ]
   },
   {
     "id": "itali-1994-away-kit-baggio-polo-embroidery-2",
@@ -14647,8 +14104,7 @@ export const JERSEYS: Jersey[] =[
       "1994",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "intermilan-25-26-home-kit-lautaro",
@@ -14681,9 +14137,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "intermilan-25-26-away-kit-lautaro",
@@ -14716,9 +14170,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Away",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "intermilan-2007-08-home-kit-ibrahimovic-fivesleeve",
@@ -14752,9 +14204,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2007",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "intermilan-1999-2000-home-kit-ronaldo-embroidery",
@@ -14798,9 +14248,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "1999",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "intermilan-1997-98-away-kit-ronaldo-fivesleeve",
@@ -14841,9 +14289,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "1997",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermilan"
+    ]
   },
   {
     "id": "intermiami-flame-edition-kit-messi-embroidery-2",
@@ -14887,9 +14333,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Intermiami"
+    ]
   },
   {
     "id": "holland-away-football-shirt-2002-04-v-nistelrody-sublimation",
@@ -14924,9 +14368,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Away",
       "2002"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Holland"
+    ]
   },
   {
     "id": "germany-fantasy-kit-beckenbauer-polo-embroidery",
@@ -14971,9 +14413,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-24-25-third-kit-kroos-embroidery-2",
@@ -15009,9 +14449,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-24-25-pre-match-kit-kroos-embroidery",
@@ -15051,9 +14489,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2026-home-kit-fivesleeve-v-knitted-polo-embroidery-premium",
@@ -15101,9 +14537,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2024-away-kit-kroos-embroidery",
@@ -15143,9 +14577,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2024",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2024-away-kit-kroos-2",
@@ -15179,9 +14611,7 @@ export const JERSEYS: Jersey[] =[
       "Germany",
       "Away",
       "2024"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2014-away-kit-kroos",
@@ -15219,9 +14649,7 @@ export const JERSEYS: Jersey[] =[
       "Germany",
       "Away",
       "2014"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2008-09-home-kit-ballack-embroidery-2",
@@ -15257,9 +14685,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2008",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-2004-05-home-kit-ballack-fivesleeve",
@@ -15300,9 +14726,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2004",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-1998-home-kit-klinsmann-embroidery",
@@ -15338,9 +14762,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "1998",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-1992-93-training-kit-beckenbauer-fivesleeve",
@@ -15382,9 +14804,7 @@ export const JERSEYS: Jersey[] =[
       "1992",
       "Training",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "germany-1992-special-kit-polo-embroidery",
@@ -15427,9 +14847,7 @@ export const JERSEYS: Jersey[] =[
       "1992",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Germany"
+    ]
   },
   {
     "id": "france-1998-away-kit-zidane-polo-embroidery-premium",
@@ -15475,9 +14893,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "france-1998-away-kit-zidane-polo-embroidery-4",
@@ -15520,9 +14936,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "France"
+    ]
   },
   {
     "id": "f1-mercedes-petronas-black-polo-premium",
@@ -15567,8 +14981,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Polo"
-    ],
-    "mainCategory": "F1"
+    ]
   },
   {
     "id": "f1-ferrari-scuderia-red-polo-premium",
@@ -15614,8 +15027,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Premium",
       "Polo"
-    ],
-    "mainCategory": "F1"
+    ]
   },
   {
     "id": "england-vintage-kit-fivesleeve-polo-embroidery-premium",
@@ -15660,9 +15072,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "england-2004-home-kit-beckham-polo-embroidery",
@@ -15701,9 +15111,7 @@ export const JERSEYS: Jersey[] =[
       "2004",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "england-2004-home-david-beckham-jersey-home-kit-embroidery",
@@ -15739,9 +15147,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2004",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "england-1998-home-kit-beckham-polo-embroidery-premium",
@@ -15765,7 +15171,7 @@ export const JERSEYS: Jersey[] =[
       "XXXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": true,
       "XL": true,
@@ -15789,9 +15195,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "england-1998-home-kit-beckham-polo-embroidery-2",
@@ -15830,9 +15234,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "england-1998-home-kit-beckham-fivesleeve-polo-embroidery-premium",
@@ -15859,9 +15261,9 @@ export const JERSEYS: Jersey[] =[
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2025-11-18T181600.385_00328e54-1695-48ed-a124-6533a5eccc45.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -15879,9 +15281,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "England"
+    ]
   },
   {
     "id": "dickies-oversized-tshirt-embroidery",
@@ -15919,8 +15319,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "T-Shirt"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "dickies-oversized-tshirt-black-embroidery",
@@ -15960,8 +15359,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "T-Shirt"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "crop-top-real-madrid-25-26-away-kit-belingham",
@@ -15997,8 +15395,7 @@ export const JERSEYS: Jersey[] =[
       "Belingham",
       "Away",
       "2026"
-    ],
-    "mainCategory": "Crop Top"
+    ]
   },
   {
     "id": "crop-top-liverpool-25-26-home-writz",
@@ -16033,8 +15430,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Crop Top"
+    ]
   },
   {
     "id": "crop-top-intermilan-ronaldo-polo",
@@ -16073,8 +15469,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "Crop Top"
+    ]
   },
   {
     "id": "crop-top-arsanel-rice-polo",
@@ -16110,8 +15505,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "Crop Top"
+    ]
   },
   {
     "id": "crop-top-argentina-maradona-polo",
@@ -16148,8 +15542,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Polo"
-    ],
-    "mainCategory": "Crop Top"
+    ]
   },
   {
     "id": "croatia-1998-99-home-kit-suker-fivesleeve-polo",
@@ -16193,9 +15586,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Croatia"
+    ]
   },
   {
     "id": "chelsea-year-of-the-snake-special-edition-kit-enzo",
@@ -16228,9 +15619,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Chelsea"
+    ]
   },
   {
     "id": "chelsea-2012-13-home-kit-hazard-embroidery",
@@ -16265,9 +15654,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2012",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Chelsea"
+    ]
   },
   {
     "id": "brazil-black-concept-kit-polo-embroidery-premium",
@@ -16313,9 +15700,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "brazil-2002-away-kit-ronaldo-polo-embroidery-premium",
@@ -16342,7 +15727,7 @@ export const JERSEYS: Jersey[] =[
       "S": true,
       "M": true,
       "L": true,
-      "XL": true,
+      "XL": false,
       "XXL": false,
       "XXXL": false
     },
@@ -16364,9 +15749,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Brazil"
+    ]
   },
   {
     "id": "boca-juniors-1996-97-home-kit-maradona-polo-embroidery-premium",
@@ -16407,8 +15790,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "boca-juniors-1996-97-away-kit-maradona-polo-embroidery-premium",
@@ -16433,9 +15815,9 @@ export const JERSEYS: Jersey[] =[
       "XXL": false,
       "L": false,
       "M": false,
-      "S": true
+      "S": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2025-11-28T163101.727_6af5d067-75c0-41d1-8bb0-01c40e5a1b54.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -16451,8 +15833,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Other"
+    ]
   },
   {
     "id": "bayern-2009-10-third-kit-robben-polo-embroidery-premium",
@@ -16497,9 +15878,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Bayern"
+    ]
   },
   {
     "id": "bayern-1998-99-away-kit-matthaus-polo-embroidery",
@@ -16539,9 +15918,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Bayern"
+    ]
   },
   {
     "id": "barcelona-x-santos-neymer-special-edition-kit-embroidery-2",
@@ -16581,9 +15958,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-pedri-special-edition-kit-embroidery",
@@ -16623,9 +15998,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-halloween-special-edition-kit-embroidery",
@@ -16664,9 +16037,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-2005-06-home-kit-messi-embroidery",
@@ -16710,9 +16081,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2005",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-2003-04-home-kit-ronaldinho-fivesleeve-polo-3",
@@ -16751,9 +16120,7 @@ export const JERSEYS: Jersey[] =[
       "2003",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-2003-04-away-kit-messi-polo-embroidery-premium",
@@ -16775,7 +16142,7 @@ export const JERSEYS: Jersey[] =[
       "S"
     ],
     "sizeStock": {
-      "XL": true,
+      "XL": false,
       "L": false,
       "M": false,
       "S": true
@@ -16798,9 +16165,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-2002-03-home-kit-puyol-fivesleeve",
@@ -16838,9 +16203,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2002",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-2001-02-home-kit-fivesleeve-polo",
@@ -16876,9 +16239,7 @@ export const JERSEYS: Jersey[] =[
       "2001",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "barcelona-1999-home-kit-rivaldo-fullsleeve-polo-embroidery-premium",
@@ -16924,8 +16285,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Full Sleeve"
-    ],
-    "mainCategory": "FullSleeve"
+    ]
   },
   {
     "id": "barcelona-125th-anniversary-kit-cruyff-fivesleeve-polo-embroidery-premium-2",
@@ -16971,9 +16331,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Barcelona"
+    ]
   },
   {
     "id": "atletico-madrid-wonder-women-special-edition-kit-griezmann-embroidery",
@@ -17010,9 +16368,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Atletico"
+    ]
   },
   {
     "id": "atletico-madrid-25-26-third-kit-alvarez",
@@ -17050,9 +16406,7 @@ export const JERSEYS: Jersey[] =[
       "Alvarez",
       "Third",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Atletico"
+    ]
   },
   {
     "id": "atletico-madrid-25-26-away-kit-alvarez",
@@ -17088,9 +16442,7 @@ export const JERSEYS: Jersey[] =[
       "Alvarez",
       "Away",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Atletico"
+    ]
   },
   {
     "id": "aston-2019-20-home-kit-grealish-embroidery",
@@ -17129,9 +16481,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2019",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Aston"
+    ]
   },
   {
     "id": "arsanel-tiro25-competition-training-kit",
@@ -17165,9 +16515,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Training"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-25-26-third-kit-eze-polo-embroidery-premium",
@@ -17213,9 +16561,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-25-26-pre-match-kit",
@@ -17252,9 +16598,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-25-26-home-kit-zubimendi",
@@ -17289,9 +16633,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-25-26-home-kit-rice",
@@ -17324,9 +16666,7 @@ export const JERSEYS: Jersey[] =[
     "tags": [
       "Home",
       "2026"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-2015-16-third-kit-ozil-embroidery",
@@ -17361,9 +16701,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "2015",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-2015-16-home-kit-ozil-polo-embroidery",
@@ -17399,9 +16737,7 @@ export const JERSEYS: Jersey[] =[
       "2015",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-2013-14-away-kit-ozil-polo",
@@ -17435,9 +16771,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "2013",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-2009-10-third-kit-fabregas-fivesleeve-polo",
@@ -17480,9 +16814,7 @@ export const JERSEYS: Jersey[] =[
       "2009",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-2003-04-away-kit-henry-polo-embroidery",
@@ -17523,9 +16855,7 @@ export const JERSEYS: Jersey[] =[
       "2003",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-1994-home-wright-fivesleeve-polo-embroidery",
@@ -17570,9 +16900,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "arsanel-1992-93-home-kit-v-knitted-polo-fivesleeve-embroidery-premium",
@@ -17619,9 +16947,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Arsanel"
+    ]
   },
   {
     "id": "argentina-x-dragon-ball-special-edition-kit-messi-embroidery",
@@ -17658,9 +16984,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "argentina-la-pulga-special-edition-messi-embroidery-2",
@@ -17703,9 +17027,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "argentina-2026-training-kit-messi",
@@ -17743,9 +17065,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Training"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "argentina-2026-gk-kit-e-martinez",
@@ -17787,9 +17107,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Goalkeeper"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "argentina-2002-03-home-kit-batistuta-fivesleeve",
@@ -17828,9 +17146,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2002",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "argentina-1996-97-third-kit-fivesleeve",
@@ -17865,9 +17181,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "1996",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "argentina-1996-97-third-kit-batistuta-fivesleeve",
@@ -17906,9 +17220,7 @@ export const JERSEYS: Jersey[] =[
       "Third",
       "1996",
       "Five Sleeve"
-    ],
-    "mainCategory": "World Cup",
-    "subCategory": "Argentina"
+    ]
   },
   {
     "id": "alnassr-25-26-third-kit-ronaldo-polo-embroidery-2",
@@ -17927,9 +17239,9 @@ export const JERSEYS: Jersey[] =[
       "S"
     ],
     "sizeStock": {
-      "S": true
+      "S": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/f-2025-11-03T181040.218_4ba637ac-8de1-457e-a5ba-4c38893cb33d.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -17945,9 +17257,7 @@ export const JERSEYS: Jersey[] =[
       "2026",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Alnassr"
+    ]
   },
   {
     "id": "ajax-25-26-home-kit-hato-embroidery",
@@ -17988,9 +17298,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Ajax"
+    ]
   },
   {
     "id": "ajax-2021-22-third-kit-antony-polo-embroidery",
@@ -18034,9 +17342,7 @@ export const JERSEYS: Jersey[] =[
       "2021",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Ajax"
+    ]
   },
   {
     "id": "ajax-1993-home-kit-cruyff-fivesleeve-polo-embroidery-premium",
@@ -18080,9 +17386,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Ajax"
+    ]
   },
   {
     "id": "acmilan-2013-14-away-kit-kaka-embroidery-premium",
@@ -18120,9 +17424,7 @@ export const JERSEYS: Jersey[] =[
       "2013",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-2009-10-away-kit-ronaldinho-fivesleeve-polo-2",
@@ -18163,9 +17465,7 @@ export const JERSEYS: Jersey[] =[
       "2009",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-2006-07-home-kit-ronaldo-retro-embroidery-2",
@@ -18207,9 +17507,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2006",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-2006-07-away-kit-maldini-embroidery-premium-2",
@@ -18253,9 +17551,7 @@ export const JERSEYS: Jersey[] =[
       "2006",
       "Premium",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-2000-01-training-kit",
@@ -18296,9 +17592,7 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2000",
       "Training"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1999-2000-home-kit-maldini-polo-embroidery-2",
@@ -18334,9 +17628,7 @@ export const JERSEYS: Jersey[] =[
       "1999",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1999-2000-home-kit-maldini-fivesleeve-polo-3",
@@ -18377,9 +17669,7 @@ export const JERSEYS: Jersey[] =[
       "1999",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1998-99-away-kit-maldini-polo-embroidery",
@@ -18423,9 +17713,7 @@ export const JERSEYS: Jersey[] =[
       "1998",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1997-98-third-kit-maldini-polo-embroidery-premium",
@@ -18470,9 +17758,7 @@ export const JERSEYS: Jersey[] =[
       "Premium",
       "Embroidery",
       "Polo"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1997-98-home-kit-maldini-fivesleeve-polo",
@@ -18513,9 +17799,7 @@ export const JERSEYS: Jersey[] =[
       "1997",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1997-98-away-kit-maldini-fivesleeve-polo-embroidery-premium",
@@ -18559,9 +17843,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1997-98-away-kit-maldini-fivesleeve-2",
@@ -18597,9 +17879,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "1997",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1997-98-away-kit-maldini-embroidery",
@@ -18634,9 +17914,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "1997",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1994-95-away-kit-maldini-fivesleeve-polo-embroidery-premium",
@@ -18680,9 +17958,7 @@ export const JERSEYS: Jersey[] =[
       "Embroidery",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1994-95-away-kit-maldini-embroidery",
@@ -18721,9 +17997,7 @@ export const JERSEYS: Jersey[] =[
       "Away",
       "1994",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-1990-91-home-kit-van-basten-fivesleeve-polo",
@@ -18764,9 +18038,7 @@ export const JERSEYS: Jersey[] =[
       "1990",
       "Polo",
       "Five Sleeve"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   },
   {
     "id": "acmilan-120th-anniversary-edition-kit-ibrahimovic-embroidery",
@@ -18801,10 +18073,8 @@ export const JERSEYS: Jersey[] =[
       "Home",
       "2026",
       "Embroidery"
-    ],
-    "mainCategory": "Clubs",
-    "subCategory": "Acmilan"
+    ]
   }
-];
+]
 
 ;
