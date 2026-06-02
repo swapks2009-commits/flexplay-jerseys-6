@@ -58,19 +58,18 @@ export default function WhatsAppModal({ jersey, initialSize, onClose }: Props) {
     const msg = [
       `New Order – FlexPlay Jerseys`,
       ``,
-      `*• Product* ${jersey.name}`,
-      `Size ${size} | Qty: ${qty}`,
+      `*• Product*`,
+      `${jersey.name}`,
+      `Size   | Qty: ${qty}`,
       priceLine,
       `Free Delivery`,
       ``,
       `*• Customer*`,
-      `NAME : ${name}`,
+      `NAME: ${name}`,
       `ADDRESS: ${fullAddress}`,
       `PIN: ${pinCode}`,
       `STATE: ${stateName}`,
       `PHONE NUMBER: ${phone}`,
-      ``,
-      `Please confirm availability of above product`,
     ].join('\n')
     window.open(`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`, '_blank')
     onClose()
