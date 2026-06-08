@@ -14,8 +14,8 @@ export default function Hero() {
         <span style={{ color: 'var(--text-secondary)' }}>2026 Collection</span>
       </h1>
       <p className="text-sm sm:text-base max-w-xl mx-auto mb-5 sm:mb-7" style={{ color: 'var(--text-secondary)' }}>
-        Premium football jerseys — Argentina, Brazil, Portugal, France & more.
-        Embroidered crests, top fabric, delivered across India.
+        Premium Football Jerseys — Argentina, Brazil, Portugal, France & more.
+        Embroidered Crests, Top fabric, Delivered across India.
       </p>
       <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
         <a href="#collection"
