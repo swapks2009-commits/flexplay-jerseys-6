@@ -259,19 +259,60 @@ export default function Home() {
           <div style={{ display: 'flex', gap: 8, alignItems: 'center', width: '100%', maxWidth: 360 }} className="w-full sm:w-auto">
             <div style={{ position: 'relative', flex: 1, minWidth: 0 }}>
               <input
-                type="text" placeholder="Search jerseys…" value={search}
+                type="text" 
+                placeholder="👉 You will find any jersey here! 👈" 
+                value={search}
                 onChange={e => setSearch(e.target.value)}
                 style={{
                   width: '100%', padding: '8px 12px 8px 32px',
                   fontSize: 13, borderRadius: 8, outline: 'none',
-                  border: '1px solid #d0d0d0', background: 'white', color: '#111',
+                  border: '2px solid #d0d0d0', background: 'white', color: '#111',
                   boxSizing: 'border-box',
+                  transition: 'all 0.3s ease',
+                }}
+                onFocus={(e) => {
+                  e.target.style.borderColor = '#ff6b35';
+                  e.target.style.boxShadow = '0 0 0 3px rgba(255, 107, 53, 0.1)';
+                }}
+                onBlur={(e) => {
+                  e.target.style.borderColor = '#d0d0d0';
+                  e.target.style.boxShadow = 'none';
                 }}
               />
               <svg style={{ position: 'absolute', left: 10, top: '50%', transform: 'translateY(-50%)', opacity: 0.35 }}
                 width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
               </svg>
+              <style>{`
+                input {
+                  animation: shimmer 2s infinite;
+                }
+                input::placeholder {
+                  color: #ff6b35;
+                  font-weight: 600;
+                  opacity: 0.85;
+                  letter-spacing: 0.3px;
+                  animation: placeholderFlash 1.5s infinite;
+                }
+                @keyframes placeholderFlash {
+                  0%, 100% {
+                    opacity: 1;
+                    color: #ff6b35;
+                  }
+                  50% {
+                    opacity: 0.4;
+                    color: #ff8c61;
+                  }
+                }
+                @keyframes shimmer {
+                  0%, 100% {
+                    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.1);
+                  }
+                  50% {
+                    box-shadow: 0 0 12px 4px rgba(255, 107, 53, 0.2);
+                  }
+                }
+              `}</style>
             </div>
             <button
               onClick={resetFilters}
