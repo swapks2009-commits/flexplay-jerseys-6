@@ -158,7 +158,7 @@ export default function Home() {
 
   const [filterMainCategory, setFilterMainCategory] = useState('All')
   const [filterSubCategory, setFilterSubCategory] = useState('All')
-  const [filterStock, setFilterStock] = useState('All')
+  const [filterStock, setFilterStock] = useState('In Stock')
   const [search, setSearch] = useState('')
 
   // Reset all filters and clear search
