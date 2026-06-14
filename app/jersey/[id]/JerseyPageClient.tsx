@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppModal from '@/components/WhatsAppModal'
 import ShareButton from '@/components/ShareButton'
+import YouMightAlsoLike from '@/components/YouMightAlsoLike'
 
 const COUNTRY_COLORS: Record<string, [string, string]> = {
   Argentina: ['#74b9e8', '#ffffff'],
@@ -344,6 +345,8 @@ export default function JerseyPageClient({ id }: { id: string }) {
           </button>
         </div>
       </div>
+
+      <YouMightAlsoLike currentJerseyId={jersey.id} />
 
       <Footer />
 
