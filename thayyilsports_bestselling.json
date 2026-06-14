@@ -1,5 +1,52 @@
 [
   {
+    "id": "japan-2026-away-kit-embroidery-premium-1",
+    "name": "Japan 2026 Away Kit Embroidery Premium",
+    "shortName": "Japan 2026 Away",
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "year": 2026,
+    "kit": "Away",
+    "player": "",
+    "type": "Premium",
+    "badge": "JPN",
+    "originalPrice": 741,
+    "discountedPrice": 499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+    ],
+    "sizeStock": {
+      "S": true,
+      "M": true,
+      "L": true,
+      "XL": true,
+      "XXL": true,
+      "XXXL": true
+    },
+    "inStock": true,
+    "images": [
+      "http://www.thayyilsports.in/cdn/shop/files/F-2026-06-13T205726.959.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/F-2026-06-13T205726.959.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/C-2026-06-13T205729.366.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/B-2026-06-13T205732.379.webp",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
+    ],
+    "description": "2026 Japan Away Kit. ",
+    "tags": [
+      "Japan",
+      "Away",
+      "2026",
+      "Premium",
+      "Embroidery"
+    ]
+  },
+  {
     "id": "real-madrid-dragon-white-special-edition-kit-ronaldo-fivesleeve-polo",
     "name": "Real Madrid Dragon White Special Edition Kit Ronaldo Fivesleeve Polo",
     "shortName": "Unknown 2026 Home – Ronaldo",
@@ -22,7 +69,7 @@
       "S": true,
       "M": true,
       "L": true,
-      "XL": true
+      "XL": false
     },
     "inStock": true,
     "images": [
@@ -74,7 +121,7 @@
       "https://www.thayyilsports.in/cdn/shop/files/B-2026-06-12T221631.472.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
     ],
-    "description": "2026 adding on main Unknown Home Kit featuring Ronaldo's name & number. ",
+    "description": "2026 Unknown Home Kit featuring Ronaldo's name & number. ",
     "tags": [
       "Ronaldo",
       "Home",
@@ -634,13 +681,13 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
-      "M": true,
+      "S": false,
+      "M": false,
       "L": false,
-      "XL": true,
+      "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-06-09T201817.754_b438d1d6-2d65-420a-a24d-b0f1c7424e90.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -681,9 +728,9 @@
     "sizeStock": {
       "S": true,
       "M": true,
-      "L": true,
-      "XL": true,
-      "XXL": true
+      "L": false,
+      "XL": false,
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -724,7 +771,7 @@
     "sizeStock": {
       "S": true,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": true
     },
     "inStock": true,
@@ -809,9 +856,9 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": false
     },
@@ -1026,7 +1073,7 @@
       "S": true,
       "M": true,
       "L": true,
-      "XL": true
+      "XL": false
     },
     "inStock": true,
     "images": [
@@ -1111,7 +1158,7 @@
       "S": true,
       "M": true,
       "L": false,
-      "XL": true,
+      "XL": false,
       "XXL": true
     },
     "inStock": true,
@@ -1152,12 +1199,12 @@
     ],
     "sizeStock": {
       "S": false,
-      "M": true,
-      "L": true,
+      "M": false,
+      "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-06-04T190757.706.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -1196,11 +1243,11 @@
     "sizeStock": {
       "S": false,
       "M": false,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-06-04T185407.240.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -1242,13 +1289,13 @@
     ],
     "sizeStock": {
       "S": false,
-      "M": true,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false,
       "XXXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-06-03T224124.876_8c75aa8f-bf7c-4ed5-b87e-af5752e0be3d.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -1430,7 +1477,7 @@
       "M": true,
       "L": false,
       "XL": true,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -1552,10 +1599,10 @@
     "sizeStock": {
       "S": false,
       "M": false,
-      "L": true,
+      "L": false,
       "XL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-31T134528.564.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -2996,7 +3043,7 @@
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -3258,7 +3305,7 @@
     ],
     "sizeStock": {
       "S": true,
-      "M": true,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false
@@ -3474,7 +3521,7 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": false,
       "L": false,
       "XL": true,
@@ -3493,53 +3540,6 @@
       "Away",
       "2026",
       "Five Sleeve"
-    ]
-  },
-  {
-    "id": "japan-2026-away-kit-embroidery-premium",
-    "name": "Japan 2026 Away Kit Embroidery Premium",
-    "shortName": "Japan 2026 Away",
-    "country": "Japan",
-    "flag": "🇯🇵",
-    "year": 2026,
-    "kit": "Away",
-    "player": "",
-    "type": "Premium",
-    "badge": "JPN",
-    "originalPrice": 741,
-    "discountedPrice": 499,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL",
-      "XXXXL"
-    ],
-    "sizeStock": {
-      "S": false,
-      "M": false,
-      "L": false,
-      "XL": false,
-      "XXL": false,
-      "XXXXL": false
-    },
-    "inStock": false,
-    "images": [
-      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T165435.152.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
-      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-15T165435.152.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-15T165438.608.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-15T165442.346.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
-    ],
-    "description": "2026 Japan Away Kit. ",
-    "tags": [
-      "Japan",
-      "Away",
-      "2026",
-      "Premium",
-      "Embroidery"
     ]
   },
   {
@@ -4660,7 +4660,7 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": true,
       "L": false,
       "XL": false,
@@ -4791,13 +4791,13 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": false,
+      "S": true,
       "M": false,
       "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": false,
+    "inStock": true,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-05T175307.165.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -5505,7 +5505,7 @@
       "M": true,
       "L": true,
       "XL": true,
-      "XXL": true,
+      "XXL": false,
       "XXXL": false
     },
     "inStock": true,
@@ -5576,53 +5576,6 @@
     ]
   },
   {
-    "id": "brazil-2004-home-kit-ronaldinho-embroidery-premium",
-    "name": "Brazil 2004 Home Kit Ronaldinho Embroidery Premium",
-    "shortName": "Brazil 2004 Home",
-    "country": "Brazil",
-    "flag": "🇧🇷",
-    "year": 2004,
-    "kit": "Home",
-    "player": "",
-    "type": "Premium",
-    "badge": "BRA",
-    "originalPrice": 741,
-    "discountedPrice": 499,
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL",
-      "3XL"
-    ],
-    "sizeStock": {
-      "S": true,
-      "M": true,
-      "L": true,
-      "XL": true,
-      "XXL": true,
-      "3XL": false
-    },
-    "inStock": true,
-    "images": [
-      "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-02T204148.806.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
-      "https://www.thayyilsports.in/cdn/shop/files/F-2026-05-02T204148.806.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/C-2026-05-02T204153.808.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/B-2026-05-02T204156.934.webp",
-      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
-    ],
-    "description": "2004 Brazil Home Kit. ",
-    "tags": [
-      "Brazil",
-      "Home",
-      "2004",
-      "Premium",
-      "Embroidery"
-    ]
-  },
-  {
     "id": "brazil-2026-home-kit-neymer-embroidery-premium",
     "name": "Brazil 2026 Home Kit Neymer Embroidery Premium",
     "shortName": "Brazil 2026 Home – Neymer",
@@ -5645,13 +5598,13 @@
     ],
     "sizeStock": {
       "S": false,
-      "M": true,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false,
       "XXXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-05-01T210627.100.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -5697,7 +5650,7 @@
       "L": true,
       "XL": true,
       "XXL": true,
-      "XXXL": true
+      "XXXL": false
     },
     "inStock": true,
     "images": [
@@ -6222,7 +6175,7 @@
     "sizeStock": {
       "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": true,
       "XXL": false,
       "XXXL": false
@@ -7008,13 +6961,13 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
-      "M": true,
+      "S": false,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T220808.406.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -7609,12 +7562,12 @@
     ],
     "sizeStock": {
       "S": false,
-      "M": true,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-19T193257.112.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -7935,7 +7888,7 @@
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true,
+      "XXL": false,
       "XXXL": true
     },
     "inStock": true,
@@ -8561,7 +8514,7 @@
     "sizeStock": {
       "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": false,
       "XXL": false
     },
@@ -9003,7 +8956,7 @@
     ],
     "sizeStock": {
       "S": true,
-      "M": true,
+      "M": false,
       "L": false,
       "XL": false,
       "XXL": false,
@@ -9171,7 +9124,7 @@
     ],
     "sizeStock": {
       "L": false,
-      "XL": true,
+      "XL": false,
       "XXL": true
     },
     "inStock": true,
@@ -9508,9 +9461,9 @@
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-04-01T203057.209.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -10366,7 +10319,7 @@
       "S": false,
       "M": true,
       "L": true,
-      "XL": true,
+      "XL": false,
       "XXL": false
     },
     "inStock": true,
@@ -10685,7 +10638,7 @@
     "sizeStock": {
       "S": false,
       "M": true,
-      "L": true,
+      "L": false,
       "XL": true,
       "XXL": true
     },
@@ -10824,14 +10777,14 @@
       "XXXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": false,
       "L": false,
       "XL": false,
       "XXL": false,
       "XXXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-03-08T181636.510.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -10998,7 +10951,7 @@
     ],
     "sizeStock": {
       "M": false,
-      "L": true,
+      "L": false,
       "XL": true
     },
     "inStock": true,
@@ -12016,7 +11969,7 @@
       "M": false,
       "L": false,
       "XL": false,
-      "XXL": true
+      "XXL": false
     },
     "inStock": true,
     "images": [
@@ -12787,13 +12740,13 @@
       "XL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "L": false,
       "M": false,
       "XXL": false,
       "XL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2026-02-07T181304.675.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -13458,13 +13411,13 @@
       "XXL"
     ],
     "sizeStock": {
-      "S": true,
+      "S": false,
       "M": false,
       "L": false,
       "XL": false,
       "XXL": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2025-12-06T190527.598_a86bba66-6caa-4ca1-a16d-bb4a8182d909.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
@@ -17420,10 +17373,10 @@
       "L"
     ],
     "sizeStock": {
-      "XL": true,
+      "XL": false,
       "L": false
     },
-    "inStock": true,
+    "inStock": false,
     "images": [
       "http://www.thayyilsports.in/cdn/shop/files/F-2025-11-28T155154.311_b5904ca3-8788-4c40-872a-e4c0dcb2b003.webp",
       "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
