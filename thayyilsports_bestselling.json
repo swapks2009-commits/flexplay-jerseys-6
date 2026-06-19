@@ -11561,6 +11561,34 @@
     ]
   },
   {
+    "id": "test-product",
+    "name": "Test Product",
+    "shortName": "Unknown 2026 Home",
+    "country": "Test",
+    "flag": "🏳",
+    "year": 2026,
+    "kit": "Home",
+    "player": "",
+    "type": "Standard",
+    "badge": "UNK",
+    "originalPrice": 741,
+    "discountedPrice": 143,
+    "sizes": [],
+    "sizeStock": {},
+    "inStock": true,
+    "images": [
+      "http://www.thayyilsports.in/cdn/shop/files/IMG-9743.jpg",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo_blk.svg",
+      "https://www.thayyilsports.in/cdn/shop/files/IMG-9743.jpg",
+      "https://www.thayyilsports.in/cdn/shop/files/thayyilsports_logo.svg"
+    ],
+    "description": "2026 Unknown Home Kit. ",
+    "tags": [
+      "Home",
+      "2026"
+    ]
+  },
+  {
     "id": "tshirt-fullsleeve-emirates-r-w",
     "name": "Tshirt Fullsleeve Emirates R/W",
     "shortName": "Unknown 2026 Home",
