@@ -1,5 +1,5 @@
 'use client'
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { JERSEYS } from '@/constants/jerseys'
 import { 
@@ -13,7 +13,6 @@ import {
   CROPTOP_PRIORITY,
   GLOBAL_PRIORITY 
 } from '@/constants/jerseyPriority'
-import { saveScrollPosition } from '@/utils/scrollRestoration'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import JerseyCard from '@/components/JerseyCard'
@@ -23,15 +22,18 @@ import Ticker from '@/components/Ticker'
 export default function Home() {
   const router = useRouter()
 
-  // Restore scroll position immediately on mount, before any rendering
   useEffect(() => {
-    const savedPosition = sessionStorage.getItem('flexplay_scroll_position')
-    
-    if (savedPosition !== null) {
-      const position = JSON.parse(savedPosition)
-      // Restore immediately without any delay
-      window.scrollTo(0, position)
-      sessionStorage.removeItem('flexplay_scroll_position')
+    // Scroll to jersey grid on page load
+    const gridElement = document.getElementById('jerseyGrid')
+    if (gridElement) {
+      setTimeout(() => {
+        const elementPosition = gridElement.getBoundingClientRect().top + window.scrollY
+        const offsetPosition = elementPosition - 20 // Small top padding
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        })
+      }, 100)
     }
   }, [])
 
@@ -413,11 +415,7 @@ export default function Home() {
               <JerseyCard
                 key={jersey.id}
                 jersey={jersey}
-                onClick={() => {
-                  // Save current scroll position before navigating
-                  saveScrollPosition()
-                  router.push(`/jersey/${jersey.id}`)
-                }}
+                onClick={() => router.push(`/jersey/${jersey.id}`)}
               />
             ))}
           </div>
