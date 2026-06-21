@@ -152,7 +152,10 @@ export default function JerseyPageClient({ id }: { id: string }) {
   )
   const slots = images.length > 0 ? images : ['']
 
-  useEffect(() => { window.scrollTo(0, 0) }, [])
+  useEffect(() => {
+    // Scroll to top when entering product page
+    window.scrollTo(0, 0)
+  }, [id])
 
   if (!jersey) {
     return (
